@@ -340,8 +340,12 @@
       return;
     }
     var left = Math.ceil(Paywall.trialLeft());
+    var hours = Math.floor(left / 3600);
+    var timeLeft = hours > 0
+      ? hours + ':' + ('0' + Math.floor((left % 3600) / 60)).slice(-2) + ':' + ('0' + (left % 60)).slice(-2)
+      : Math.floor(left / 60) + ':' + ('0' + (left % 60)).slice(-2);
     el.proText.textContent = left > 0
-      ? 'Free today: ' + Math.floor(left / 60) + ':' + ('0' + (left % 60)).slice(-2) + ' of engine time left'
+      ? 'Free today: ' + timeLeft + ' of engine time left'
       : 'Free time used up for today';
     // The same, under the maximized gauge, where the line above is out of sight.
     el.gaugeTime.textContent = el.proText.textContent;
@@ -501,7 +505,39 @@
   // Photo per car (side profile): here, or a car's own `photo` (as the cars in
   // the garage have). A car without one (a "coming soon" car) keeps the drawn
   // silhouette.
-  var CAR_PHOTO = { 'gt3': 'img/gt3.png', 'ferrari-v12': 'img/ferrari-v12.png', 'v8-muscle': 'img/v8-muscle.png', 'city-shifter': 'img/city-shifter.png', 'hellcat': 'img/hellcat.png', 'haunted-hearse': 'img/haunted-hearse.png', 'electric-zen': 'img/electric-zen.png', 'lamborghini-urus': 'img/lamborghini-urus.png', 'slipstream': 'img/slipstream.png', 'ferrari-enzo': 'img/ferrari-enzo.png', 'lamborghini-veneno': 'img/lamborghini-veneno.png', 'tesla-roadster-thrust': 'img/tesla-roadster-thrust.png', 'audi-rs6': 'img/audi-rs6.png', 'nissan-gtr-nismo-r35': 'img/nissan-gtr-nismo-r35.png', 'bugatti-chiron': 'img/bugatti-chiron.png', 'porsche-911-turbo-s': 'img/porsche-911-turbo-s.png', 'bmw-m3': 'img/bmw-m3.png', 'porsche-911-gt3-rs-991': 'img/porsche-911-gt3-rs-991.png' };
+  var CAR_PHOTO = { 
+    'gt3': 'img/gt3.png', 
+    'ferrari-v12': 'img/ferrari-v12.png', 
+    'v8-muscle': 'img/v8-muscle.png', 
+    'city-shifter': 'img/city-shifter.png', 
+    'hellcat': 'img/hellcat.png', 
+    'haunted-hearse': 'img/haunted-hearse.png', 
+    'electric-zen': 'img/electric-zen.png', 
+    'lamborghini-urus': 'img/lamborghini-urus.png', 
+    'slipstream': 'img/slipstream.png', 
+    'ferrari-enzo': 'img/ferrari-enzo.png', 
+    'lamborghini-veneno': 'img/lamborghini-veneno.png', 
+    'tesla-roadster-thrust': 
+    'img/tesla-roadster-thrust.png', 
+    'audi-rs6': 'img/audi-rs6.png', 
+    'nissan-gtr-nismo-r35': 
+    'img/nissan-gtr-nismo-r35.png', 
+    'bugatti-chiron': 'img/bugatti-chiron.png', 
+    'porsche-911-turbo-s': 'img/porsche-911-turbo-s.png', 
+    'bmw-m3': 'img/bmw-m3.png', 
+    'porsche-911-gt3-rs-991': 'img/porsche-911-gt3-rs-991.png',
+    'ferrari-812-superfast': 'img/ferrari-812-superfast.png',
+    'ferrari-purosangue': 'img/ferrari-purosangue.png',
+    'lamborghini-revuelto': 'img/lamborghini-revuelto.webp',
+    'lamborghini-temerario': 'img/lamborghini-temerario.webp',
+    'lamborghini-aventador-svj': 'img/lamborghini-aventador-svj.webp',
+    'ferrari-296-gt3': 'img/ferrari-296-gt3.png',
+    'bmw-m2': 'img/bmw-m2.png', 
+    'bmw-m4': 'img/bmw-m4.png',
+    'bmw-m5': 'img/bmw-m5.png',
+    'mazda-rx7-fd3s': 'img/mazda-rx7.jpg'
+  };
+
 
   function carPhoto(holder, c) {
     var img = holder.querySelector('img'), src = c.photo || CAR_PHOTO[c.id];
@@ -549,7 +585,6 @@
   }
 
   function setMyIds(ids) {
-    console.log('>>> setMyIds', ids);
     if (trial) { trial = ids; return; }
     settings.pinned = ids;
     saveSettings();

@@ -1255,5 +1255,622 @@ window.MOTORSOUND_CARS = [
       tireCircumferenceM: 2.29,
       maxSpeedKmh: 312
     }
+  },
+  {
+    "id": "ferrari-812-superfast",
+    "name": "Ferrari 812 Superfast",
+    "tagline": "6.5 L V12 · 8,500 rpm · 7-speed dual-clutch",
+    "engine": {
+      "idleRpm": 800,
+      "redlineRpm": 8500,
+      "limiterRpm": 8900,
+      "tachRedRpm": 8000,
+      "launchRpm": 3500,
+      "peakTorqueNm": 718,
+      "peakTorqueRpm": 7000,
+      "engineBrakeNm": 60,
+      "firing": [
+        [0, 1, 0], [60, 7, 1], [120, 5, 0], [180, 11, 1], [240, 3, 0], [300, 9, 1],
+        [360, 6, 0], [420, 12, 1], [480, 2, 0], [540, 8, 1], [600, 4, 0], [660, 10, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.2, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 4.3, "pan": 0.45, "tune": 1.02 }
+        ],
+        "pipeReflection": -0.4,
+        "pipeDamping": 0.25,
+        "formants": [
+          { "hz": 130, "q": 1.0, "gain": 0.7 },
+          { "hz": 700, "q": 2.4, "gain": 0.55 },
+          { "hz": 2300, "q": 2.8, "gain": 0.5 }
+        ],
+        "formantDry": 0.4,
+        "pulseMsIdle": 2.4,
+        "pulseMsRedline": 0.55,
+        "noise": 0.4,
+        "jitter": 0.015,
+        "cylinderTrim": 0.02,
+        "lope": 0.03,
+        "mufflerHz": [1300, 8500],
+        "bodyHz": 100,
+        "bodyDb": 2,
+        "intake": 0.1,
+        "intakeHz": 1100,
+        "whine": 0.03,
+        "whineRatio": 5,
+        "crackle": 0.7,
+        "popGain": 0.5,
+        "drive": 2.8,
+        "gain": 0.55
+      }
+    },
+    "vehicle": {
+      "massKg": 1630,
+      "cdA": 0.7,
+      "crr": 0.011,
+      "maxAccel": 8.5,
+      "peakPowerKw": 588,
+      "drivetrainEff": 0.9,
+      "ratios": [3.08, 2.18, 1.6, 1.25, 1.0, 0.8, 0.66],
+      "finalDrive": 4.0,
+      "tireCircumferenceM": 2.2
+    }
+  },
+  {
+    "id": "ferrari-purosangue",
+    "name": "Ferrari Purosangue",
+    "tagline": "6.5 L V12 · 8,250 rpm · 8-speed dual-clutch",
+    "engine": {
+      "idleRpm": 800,
+      "redlineRpm": 8250,
+      "limiterRpm": 8500,
+      "tachRedRpm": 7800,
+      "launchRpm": 3200,
+      "peakTorqueNm": 716,
+      "peakTorqueRpm": 6250,
+      "engineBrakeNm": 65,
+      "firing": [
+        [0, 1, 0], [60, 7, 1], [120, 5, 0], [180, 11, 1], [240, 3, 0], [300, 9, 1],
+        [360, 6, 0], [420, 12, 1], [480, 2, 0], [540, 8, 1], [600, 4, 0], [660, 10, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.4, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 4.5, "pan": 0.45, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.35,
+        "pipeDamping": 0.3,
+        "formants": [
+          { "hz": 120, "q": 1.0, "gain": 0.75 },
+          { "hz": 650, "q": 2.2, "gain": 0.5 },
+          { "hz": 2100, "q": 2.6, "gain": 0.45 }
+        ],
+        "formantDry": 0.45,
+        "pulseMsIdle": 2.5,
+        "pulseMsRedline": 0.6,
+        "noise": 0.35,
+        "jitter": 0.012,
+        "cylinderTrim": 0.02,
+        "lope": 0.02,
+        "mufflerHz": [1100, 7800],
+        "bodyHz": 90,
+        "bodyDb": 3,
+        "intake": 0.12,
+        "intakeHz": 1000,
+        "whine": 0.02,
+        "whineRatio": 4.8,
+        "crackle": 0.5,
+        "popGain": 0.4,
+        "drive": 2.6,
+        "gain": 0.5
+      }
+    },
+    "vehicle": {
+      "massKg": 2170,
+      "cdA": 0.82,
+      "crr": 0.012,
+      "maxAccel": 7.8,
+      "peakPowerKw": 533,
+      "drivetrainEff": 0.88,
+      "ratios": [3.4, 2.3, 1.7, 1.3, 1.0, 0.82, 0.68, 0.55],
+      "finalDrive": 4.11,
+      "tireCircumferenceM": 2.35
+    }
+  },
+  {
+    "id": "ferrari-296-gt3",
+    "name": "Ferrari 296 GT3",
+    "tagline": "3.0 L Twin-Turbo V6 (120°) · 7,250 rpm · 6-speed Sequential",
+    "engine": {
+      "idleRpm": 1000,
+      "redlineRpm": 7250,
+      "limiterRpm": 7500,
+      "tachRedRpm": 7000,
+      "launchRpm": 4500,
+      "peakTorqueNm": 710,
+      "peakTorqueRpm": 5500,
+      "engineBrakeNm": 50,
+      "firing": [
+        [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.8, "pan": -0.5, "tune": 1 },
+          { "pipeMs": 3.8, "pan": 0.5, "tune": 1 }
+        ],
+        "pipeReflection": -0.5,
+        "pipeDamping": 0.2,
+        "formants": [
+          { "hz": 150, "q": 1.2, "gain": 0.8 },
+          { "hz": 850, "q": 2.6, "gain": 0.6 },
+          { "hz": 2600, "q": 3.0, "gain": 0.55 }
+        ],
+        "formantDry": 0.3,
+        "pulseMsIdle": 2.0,
+        "pulseMsRedline": 0.45,
+        "noise": 0.5,
+        "jitter": 0.02,
+        "cylinderTrim": 0.01,
+        "lope": 0.05,
+        "mufflerHz": [1500, 9000],
+        "bodyHz": 120,
+        "bodyDb": 1,
+        "intake": 0.25,
+        "intakeHz": 1300,
+        "whine": 0.08,
+        "whineRatio": 6,
+        "crackle": 0.9,
+        "popGain": 0.7,
+        "drive": 3.2,
+        "gain": 0.65
+      }
+    },
+    "vehicle": {
+      "massKg": 1250,
+      "cdA": 0.65,
+      "crr": 0.01,
+      "maxAccel": 9.8,
+      "peakPowerKw": 447,
+      "drivetrainEff": 0.92,
+      "ratios": [2.85, 2.05, 1.58, 1.28, 1.08, 0.93],
+      "finalDrive": 3.75,
+      "tireCircumferenceM": 2.08
+    }
+  },
+  {
+    "id": "lamborghini-revuelto",
+    "name": "Lamborghini Revuelto",
+    "tagline": "6.5 L V12 Hybrid · 9,500 rpm · 8-speed dual-clutch",
+    "engine": {
+      "idleRpm": 1000,
+      "redlineRpm": 9250,
+      "limiterRpm": 9500,
+      "tachRedRpm": 9000,
+      "launchRpm": 4000,
+      "peakTorqueNm": 725,
+      "peakTorqueRpm": 6750,
+      "engineBrakeNm": 70,
+      "firing": [
+        [0, 1, 0], [60, 12, 1], [120, 4, 0], [180, 9, 1], [240, 2, 0], [300, 11, 1],
+        [360, 6, 0], [420, 7, 1], [480, 3, 0], [540, 10, 1], [600, 5, 0], [660, 8, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.0, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 4.1, "pan": 0.45, "tune": 1.02 }
+        ],
+        "pipeReflection": -0.45,
+        "pipeDamping": 0.2,
+        "formants": [
+          { "hz": 140, "q": 1.1, "gain": 0.75 },
+          { "hz": 750, "q": 2.5, "gain": 0.6 },
+          { "hz": 2500, "q": 2.9, "gain": 0.55 }
+        ],
+        "formantDry": 0.35,
+        "pulseMsIdle": 2.2,
+        "pulseMsRedline": 0.48,
+        "noise": 0.42,
+        "jitter": 0.015,
+        "cylinderTrim": 0.02,
+        "lope": 0.03,
+        "mufflerHz": [1400, 9200],
+        "bodyHz": 110,
+        "bodyDb": 2,
+        "intake": 0.15,
+        "intakeHz": 1200,
+        "whine": 0.05,
+        "whineRatio": 5.2,
+        "crackle": 0.8,
+        "popGain": 0.6,
+        "drive": 3.0,
+        "gain": 0.6
+      }
+    },
+    "vehicle": {
+      "massKg": 1772,
+      "cdA": 0.68,
+      "crr": 0.011,
+      "maxAccel": 9.5,
+      "peakPowerKw": 747,
+      "drivetrainEff": 0.91,
+      "ratios": [3.15, 2.22, 1.65, 1.31, 1.03, 0.85, 0.71, 0.58],
+      "finalDrive": 3.95,
+      "tireCircumferenceM": 2.24
+    }
+  },
+  {
+    "id": "lamborghini-temerario",
+    "name": "Lamborghini Temerario",
+    "tagline": "4.0 L Twin-Turbo V8 Hybrid · 10,000 rpm · 8-speed dual-clutch",
+    "engine": {
+      "idleRpm": 1000,
+      "redlineRpm": 10000,
+      "limiterRpm": 10250,
+      "tachRedRpm": 9500,
+      "launchRpm": 4200,
+      "peakTorqueNm": 730,
+      "peakTorqueRpm": 5500,
+      "engineBrakeNm": 55,
+      "firing": [
+        [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1], [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.9, "pan": -0.48, "tune": 1 },
+          { "pipeMs": 3.9, "pan": 0.48, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.48,
+        "pipeDamping": 0.22,
+        "formants": [
+          { "hz": 160, "q": 1.2, "gain": 0.8 },
+          { "hz": 800, "q": 2.7, "gain": 0.65 },
+          { "hz": 2700, "q": 3.1, "gain": 0.6 }
+        ],
+        "formantDry": 0.3,
+        "pulseMsIdle": 2.1,
+        "pulseMsRedline": 0.42,
+        "noise": 0.45,
+        "jitter": 0.018,
+        "cylinderTrim": 0.015,
+        "lope": 0.04,
+        "mufflerHz": [1600, 10000],
+        "bodyHz": 115,
+        "bodyDb": 2,
+        "intake": 0.2,
+        "intakeHz": 1250,
+        "whine": 0.06,
+        "whineRatio": 5.5,
+        "crackle": 0.85,
+        "popGain": 0.65,
+        "drive": 3.1,
+        "gain": 0.62
+      }
+    },
+    "vehicle": {
+      "massKg": 1690,
+      "cdA": 0.69,
+      "crr": 0.011,
+      "maxAccel": 9.2,
+      "peakPowerKw": 677,
+      "drivetrainEff": 0.9,
+      "ratios": [3.15, 2.22, 1.65, 1.31, 1.03, 0.85, 0.71, 0.58],
+      "finalDrive": 3.95,
+      "tireCircumferenceM": 2.22
+    }
+  },
+  {
+    "id": "lamborghini-aventador-svj",
+    "name": "Lamborghini Aventador SVJ",
+    "tagline": "6.5 L V12 · 8,500 rpm · 7-speed ISR automated manual",
+    "engine": {
+      "idleRpm": 900,
+      "redlineRpm": 8500,
+      "limiterRpm": 8700,
+      "tachRedRpm": 8300,
+      "launchRpm": 4000,
+      "peakTorqueNm": 720,
+      "peakTorqueRpm": 6750,
+      "engineBrakeNm": 65,
+      "firing": [
+        [0, 1, 0], [60, 12, 1], [120, 4, 0], [180, 9, 1], [240, 2, 0], [300, 11, 1],
+        [360, 6, 0], [420, 7, 1], [480, 3, 0], [540, 10, 1], [600, 5, 0], [660, 8, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.1, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 4.2, "pan": 0.45, "tune": 1.02 }
+        ],
+        "pipeReflection": -0.42,
+        "pipeDamping": 0.23,
+        "formants": [
+          { "hz": 135, "q": 1.05, "gain": 0.72 },
+          { "hz": 720, "q": 2.45, "gain": 0.58 },
+          { "hz": 2400, "q": 2.85, "gain": 0.52 }
+        ],
+        "formantDry": 0.38,
+        "pulseMsIdle": 2.3,
+        "pulseMsRedline": 0.52,
+        "noise": 0.42,
+        "jitter": 0.016,
+        "cylinderTrim": 0.02,
+        "lope": 0.035,
+        "mufflerHz": [1350, 8700],
+        "bodyHz": 105,
+        "bodyDb": 2,
+        "intake": 0.12,
+        "intakeHz": 1150,
+        "whine": 0.04,
+        "whineRatio": 5.1,
+        "crackle": 0.75,
+        "popGain": 0.55,
+        "drive": 2.9,
+        "gain": 0.58
+      }
+    },
+    "vehicle": {
+      "massKg": 1525,
+      "cdA": 0.72,
+      "crr": 0.011,
+      "maxAccel": 9.0,
+      "peakPowerKw": 566,
+      "drivetrainEff": 0.89,
+      "ratios": [3.91, 2.44, 1.81, 1.46, 1.19, 0.97, 0.84],
+      "finalDrive": 2.87,
+      "tireCircumferenceM": 2.24
+    }
+  },
+  {
+    "id": "bmw-m2",
+    "name": "BMW M2 (G87)",
+    "tagline": "3.0 L twin-turbo inline-six · 7,200 rpm · 8-speed automatic",
+    "pro": false,
+    "engine": {
+      "idleRpm": 700,
+      "redlineRpm": 7000,
+      "limiterRpm": 7200,
+      "launchRpm": 3000,
+      "peakTorqueNm": 550,
+      "peakTorqueRpm": 2650,
+      "engineBrakeNm": 55,
+      "firing": [
+        [0, 1, 0], [120, 5, 0], [240, 3, 0], [360, 6, 0],
+        [480, 2, 0], [600, 4, 0]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 9, "pan": 0, "tune": 1 }
+        ],
+        "pipeReflection": -0.45,
+        "pipeDamping": 0.3,
+        "formants": [
+          { "hz": 154, "q": 1, "gain": 1.12 },
+          { "hz": 322, "q": 1.5, "gain": 2.184 },
+          { "hz": 1130, "q": 1.8, "gain": 0.5 },
+          { "hz": 2500, "q": 2.2, "gain": 0.204 }
+        ],
+        "formantDry": 0.4,
+        "pulseMsIdle": 6.608,
+        "pulseMsRedline": 1.156,
+        "noise": 0.389,
+        "jitter": 0.066,
+        "cylinderTrim": 0.05,
+        "lope": 0.08,
+        "mufflerHz": [2457, 6356],
+        "bodyHz": 140,
+        "bodyDb": 5,
+        "intake": 0.2,
+        "intakeHz": 900,
+        "whine": 0,
+        "whineRatio": 6,
+        "crackle": 0.8,
+        "popGain": 0.5,
+        "drive": 3.8,
+        "gain": 0.383
+      }
+    },
+    "vehicle": {
+      "massKg": 1700,
+      "cdA": 0.72,
+      "crr": 0.012,
+      "maxAccel": 8.2,
+      "peakPowerKw": 338,
+      "drivetrainEff": 0.88,
+      "ratios": [5, 3.2, 2.14, 1.72, 1.31, 1, 0.82, 0.64],
+      "finalDrive": 3.15,
+      "tireCircumferenceM": 2.1
+    }
+  },
+  {
+    "id": "bmw-m4",
+    "name": "BMW M4 Competition (G82)",
+    "tagline": "3.0 L twin-turbo inline-six · 7,200 rpm · 8-speed automatic",
+    "pro": false,
+    "engine": {
+      "idleRpm": 700,
+      "redlineRpm": 7000,
+      "limiterRpm": 7200,
+      "launchRpm": 3000,
+      "peakTorqueNm": 650,
+      "peakTorqueRpm": 2750,
+      "engineBrakeNm": 60,
+      "firing": [
+        [0, 1, 0], [120, 5, 0], [240, 3, 0], [360, 6, 0],
+        [480, 2, 0], [600, 4, 0]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 9, "pan": 0, "tune": 1 }
+        ],
+        "pipeReflection": -0.45,
+        "pipeDamping": 0.3,
+        "formants": [
+          { "hz": 154, "q": 1, "gain": 1.12 },
+          { "hz": 322, "q": 1.5, "gain": 2.184 },
+          { "hz": 1130, "q": 1.8, "gain": 0.5 },
+          { "hz": 2500, "q": 2.2, "gain": 0.204 }
+        ],
+        "formantDry": 0.4,
+        "pulseMsIdle": 6.608,
+        "pulseMsRedline": 1.156,
+        "noise": 0.389,
+        "jitter": 0.066,
+        "cylinderTrim": 0.05,
+        "lope": 0.08,
+        "mufflerHz": [2457, 6356],
+        "bodyHz": 140,
+        "bodyDb": 5,
+        "intake": 0.2,
+        "intakeHz": 900,
+        "whine": 0,
+        "whineRatio": 6,
+        "crackle": 0.8,
+        "popGain": 0.5,
+        "drive": 3.8,
+        "gain": 0.383
+      }
+    },
+    "vehicle": {
+      "massKg": 1730,
+      "cdA": 0.72,
+      "crr": 0.012,
+      "maxAccel": 8.5,
+      "peakPowerKw": 375,
+      "drivetrainEff": 0.88,
+      "ratios": [5, 3.2, 2.14, 1.72, 1.31, 1, 0.82, 0.64],
+      "finalDrive": 3.15,
+      "tireCircumferenceM": 2.1
+    }
+  },
+  {
+    "id": "bmw-m5",
+    "name": "BMW M5 (G90)",
+    "tagline": "4.4 L twin-turbo V8 hybrid · 7,200 rpm · 8-speed automatic",
+    "pro": false,
+    "engine": {
+      "idleRpm": 650,
+      "redlineRpm": 7000,
+      "limiterRpm": 7200,
+      "launchRpm": 3000,
+      "peakTorqueNm": 1000,
+      "peakTorqueRpm": 1800,
+      "engineBrakeNm": 70,
+      "firing": [
+        [0, 1, 0], [90, 5, 1], [180, 4, 0], [270, 2, 1],
+        [360, 6, 0], [450, 3, 1], [540, 7, 0], [630, 8, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 9.5, "pan": -0.4, "tune": 1 },
+          { "pipeMs": 9.5, "pan": 0.4, "tune": 1 }
+        ],
+        "pipeReflection": -0.45,
+        "pipeDamping": 0.3,
+        "formants": [
+          { "hz": 120, "q": 1, "gain": 1.12 },
+          { "hz": 280, "q": 1.5, "gain": 2.184 },
+          { "hz": 1000, "q": 1.8, "gain": 0.5 },
+          { "hz": 2200, "q": 2.2, "gain": 0.204 }
+        ],
+        "formantDry": 0.4,
+        "pulseMsIdle": 6.608,
+        "pulseMsRedline": 1.156,
+        "noise": 0.389,
+        "jitter": 0.066,
+        "cylinderTrim": 0.05,
+        "lope": 0.08,
+        "mufflerHz": [2457, 6356],
+        "bodyHz": 140,
+        "bodyDb": 5,
+        "intake": 0.2,
+        "intakeHz": 900,
+        "whine": 0,
+        "whineRatio": 6,
+        "crackle": 0.8,
+        "popGain": 0.5,
+        "drive": 3.8,
+        "gain": 0.383
+      }
+    },
+    "vehicle": {
+      "massKg": 2435,
+      "cdA": 0.75,
+      "crr": 0.012,
+      "maxAccel": 9.0,
+      "peakPowerKw": 535,
+      "drivetrainEff": 0.89,
+      "ratios": [5, 3.2, 2.14, 1.72, 1.31, 1, 0.82, 0.64],
+      "finalDrive": 3.15,
+      "tireCircumferenceM": 2.18
+    }
+  },
+  {
+  "id": "mazda-rx7-fd3s",
+  "name": "Mazda RX-7 Spirit R (FD3S)",
+  "tagline": "1.3 L twin-turbo twin-rotor · 8,000 rpm · 5-speed manual",
+  "pro": false,
+  "engine": {
+    "idleRpm": 750,
+    "redlineRpm": 8000,
+    "limiterRpm": 8200,
+    "launchRpm": 3500,
+    "peakTorqueNm": 314,
+    "peakTorqueRpm": 5000,
+    "engineBrakeNm": 40,
+    // Each rotor fires once per eccentric-shaft revolution; the two rotors
+    // are phased 180° apart, giving four evenly spaced pulses per 720°.
+    "firing": [
+      [0, 1, 0], [180, 2, 1], [360, 1, 0], [540, 2, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 5.8, "pan": -0.12, "tune": 0.99 },
+        { "pipeMs": 6.1, "pan": 0.12, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.3,
+      "pipeDamping": 0.42,
+      "formants": [
+        { "hz": 150, "q": 0.9, "gain": 0.55 },
+        { "hz": 360, "q": 1.1, "gain": 0.95 },
+        { "hz": 950, "q": 1.4, "gain": 1.25 },
+        { "hz": 2050, "q": 1.8, "gain": 1.05 },
+        { "hz": 3450, "q": 2, "gain": 0.62 },
+        { "hz": 4800, "q": 2.2, "gain": 0.28 }
+      ],
+      "formantDry": 0.32,
+      "pulseMsIdle": 1.6,
+      "pulseMsRedline": 0.42,
+      "noise": 0.8,
+      "rotaryPulse": {
+        "noiseDecaySIdle": 0.0015,
+        "noiseDecaySRedline": 0.0007
+      },
+      "jitter": 0.012,
+      "cylinderTrim": 0.01,
+      "lope": 0,
+      "mufflerHz": [1500, 8800],
+      "bodyHz": 120,
+      "bodyDb": 2,
+      "intake": 0.3,
+      "intakeHz": 1900,
+      "whine": 0.06,
+      "whineRatio": 7,
+      "crackle": 0.28,
+      "popGain": 0.26,
+      "drive": 2.6,
+      "gain": 0.36
+    }
+  },
+  "vehicle": {
+    "massKg": 1270,
+    "cdA": 0.6,
+    "crr": 0.011,
+    "maxAccel": 7.8,
+    "peakPowerKw": 206,
+    "drivetrainEff": 0.86,
+    "ratios": [3.483, 2.015, 1.391, 1.0, 0.762],
+    "finalDrive": 4.1,
+    "tireCircumferenceM": 1.98
   }
+}
 ];

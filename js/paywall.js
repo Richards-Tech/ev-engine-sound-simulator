@@ -13,7 +13,7 @@
   var PRO_KEY = 'motorsound.pro.v1';
   var DEVICE_KEY = 'motorsound.device.v1';
   var TRIAL_KEY = 'motorsound.trial.v1';
-  var TRIAL_SECONDS = 5 * 60;   // free engine time per day
+  var TRIAL_SECONDS = 5 * 60 * 60;   // free engine time per day
   var POLL_MS = 3000;
   var BONUS_TAPS = 30;          // secret: taps on the QR code ...
   var BONUS_SECONDS = 5 * 60;   // ... earn this much extra time ...

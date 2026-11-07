@@ -811,6 +811,15 @@ var EngineDSP = (function () {
     this.pulseLen = sr / 1000 * lerp(s.pulseMsIdle, s.pulseMsRedline, Math.sqrt(rpmN)) * (1.12 - 0.3 * load);
     this.noiseAmt = s.noise * (0.3 + 0.7 * load + 1.2 * this.burble) * (0.55 + 0.9 * ch);
     this.noiseDecay = Math.exp(-1 / (sr * lerp(0.0045, 0.0012, rpmN)));
+    // The RX-7's rotary exhaust pulse has a short, percussive tail. Keep this
+    // override opt-in so every other engine retains the standard decay above.
+    if (s.rotaryPulse) {
+      this.noiseDecay = Math.exp(-1 / (sr * lerp(
+        s.rotaryPulse.noiseDecaySIdle,
+        s.rotaryPulse.noiseDecaySRedline,
+        rpmN
+      )));
+    }
     this.jitter = s.jitter * (1 + 1.5 * ch * (1 - rpmN));
     // Lumpy cam: at idle, random cylinders burn weakly → the classic lope.
     this.lope = s.lope * ch * (1 - clamp(rpmN * 5, 0, 1)) * (1 - load) * this.crackleAmt;
