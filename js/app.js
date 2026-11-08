@@ -582,7 +582,13 @@
     'mclaren-750sv2':'img/mclaren-750sv2.webp',
     'mclaren-750s-spider':'img/mclaren-750s-spider.webp',
     'mclaren-788hs':'img/mclaren-788hs.webp',
-    'mclaren-788hs-spider':'img/mclaren-788hs-spider.webp'
+    'mclaren-788hs-spider':'img/mclaren-788hs-spider.webp',
+    'mclaren-gts':'img/mclaren-gts.webp',
+    'mclaren-w1':'img/mclaren-w1.webp',
+    'mclaren-720s-gt3-evo':'img/mclaren-720s-gt3-evo.webp',
+    'mclaren-720s-gt3-evo': 'img/mclaren-720s-gt3-evo.webp',
+    'mclaren-artura-trophy-evo':'img/mclaren-artura-trophy-evo.webp',
+    'mclaren-mcl-hy-gtr':'img/mclaren-mcl-hy-gtr.webp'
   };
 
 

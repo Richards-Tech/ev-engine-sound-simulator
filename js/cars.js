@@ -4219,5 +4219,313 @@ window.MOTORSOUND_CARS = [
       "finalDrive": 3.45,
       "tireCircumferenceM": 2.12
     }
+  },
+  {
+  "id": "mclaren-gts",
+  "name": "McLaren GTS",
+  "tagline": "4.0 L Twin-Turbo V8 · 8,500 rpm · 7-speed SSG dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 800,
+    "redlineRpm": 8500,
+    "limiterRpm": 8700,
+    "launchRpm": 3200,
+    "peakTorqueNm": 630,
+    "peakTorqueRpm": 5500,
+    "engineBrakeNm": 58,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 4.2, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 4.2, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.45,
+      "pipeDamping": 0.25,
+      "formants": [
+        { "hz": 165, "q": 1.15, "gain": 1.1 },
+        { "hz": 700, "q": 2.2, "gain": 1.7 },
+        { "hz": 2400, "q": 2.8, "gain": 0.72 },
+        { "hz": 4100, "q": 3.2, "gain": 0.32 }
+      ],
+      "formantDry": 0.38,
+      "pulseMsIdle": 4.1,
+      "pulseMsRedline": 0.52,
+      "noise": 0.4,
+      "jitter": 0.018,
+      "cylinderTrim": 0.02,
+      "lope": 0.035,
+      "mufflerHz": [1700, 8000],
+      "bodyHz": 118,
+      "bodyDb": 4,
+      "intake": 0.26,
+      "intakeHz": 1200,
+      "whine": 0.05,
+      "whineRatio": 4.2,
+      "crackle": 0.78,
+      "popGain": 0.6,
+      "drive": 3.75,
+      "gain": 0.48
+    }
+  },
+  "vehicle": {
+    "massKg": 1520,
+    "cdA": 0.66,
+    "crr": 0.011,
+    "maxAccel": 9.8,
+    "peakPowerKw": 467,
+    "drivetrainEff": 0.9,
+    "ratios": [3.17, 2.18, 1.60, 1.23, 0.97, 0.79, 0.65],
+    "finalDrive": 3.31,
+    "tireCircumferenceM": 2.16
   }
+},
+{
+  "id": "mclaren-w1",
+  "name": "McLaren W1",
+  "tagline": "4.0 L Twin-Turbo V8 Hybrid · 9,200 rpm · 8-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 900,
+    "redlineRpm": 9200,
+    "limiterRpm": 9500,
+    "launchRpm": 4000,
+    "peakTorqueNm": 1340,
+    "peakTorqueRpm": 6000,
+    "engineBrakeNm": 70,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.5, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 3.5, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.52,
+      "pipeDamping": 0.18,
+      "formants": [
+        { "hz": 210, "q": 1.2, "gain": 1.2 },
+        { "hz": 880, "q": 2.4, "gain": 1.95 },
+        { "hz": 2950, "q": 3.1, "gain": 0.88 },
+        { "hz": 5100, "q": 3.6, "gain": 0.4 }
+      ],
+      "formantDry": 0.3,
+      "pulseMsIdle": 3.5,
+      "pulseMsRedline": 0.42,
+      "noise": 0.45,
+      "jitter": 0.015,
+      "cylinderTrim": 0.018,
+      "lope": 0.04,
+      "mufflerHz": [1900, 9500],
+      "bodyHz": 132,
+      "bodyDb": 5.5,
+      "intake": 0.35,
+      "intakeHz": 1400,
+      "whine": 0.22,
+      "whineRatio": 4.8,
+      "crackle": 0.9,
+      "popGain": 0.72,
+      "drive": 4.1,
+      "gain": 0.5
+    }
+  },
+  "vehicle": {
+    "massKg": 1399,
+    "cdA": 0.85,
+    "crr": 0.011,
+    "maxAccel": 11.5,
+    "peakPowerKw": 938,
+    "drivetrainEff": 0.93,
+    "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62, 0.52],
+    "finalDrive": 3.85,
+    "tireCircumferenceM": 2.14
+  }
+},
+{
+  "id": "mclaren-720s-gt3-evo",
+  "name": "McLaren 720S GT3 EVO",
+  "tagline": "4.0 L Twin-Turbo V8 Race Car · 8,500 rpm · 6-speed sequential",
+  "pro": false,
+  "engine": {
+    "idleRpm": 950,
+    "redlineRpm": 8500,
+    "limiterRpm": 8800,
+    "launchRpm": 4200,
+    "peakTorqueNm": 650,
+    "peakTorqueRpm": 5000,
+    "engineBrakeNm": 65,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.7, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 3.7, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.52,
+      "pipeDamping": 0.18,
+      "formants": [
+        { "hz": 195, "q": 1.25, "gain": 1.2 },
+        { "hz": 820, "q": 2.45, "gain": 1.95 },
+        { "hz": 2750, "q": 3.0, "gain": 0.88 },
+        { "hz": 4700, "q": 3.5, "gain": 0.42 }
+      ],
+      "formantDry": 0.28,
+      "pulseMsIdle": 3.5,
+      "pulseMsRedline": 0.44,
+      "noise": 0.46,
+      "jitter": 0.015,
+      "cylinderTrim": 0.018,
+      "lope": 0.042,
+      "mufflerHz": [2000, 9000],
+      "bodyHz": 135,
+      "bodyDb": 6,
+      "intake": 0.38,
+      "intakeHz": 1380,
+      "whine": 0.12,
+      "whineRatio": 4.5,
+      "crackle": 0.95,
+      "popGain": 0.78,
+      "drive": 4.2,
+      "gain": 0.52
+    }
+  },
+  "vehicle": {
+    "massKg": 1260,
+    "cdA": 0.88,
+    "crr": 0.011,
+    "maxAccel": 11.0,
+    "peakPowerKw": 405,
+    "drivetrainEff": 0.93,
+    "ratios": [3.15, 2.18, 1.62, 1.28, 1.05, 0.88],
+    "finalDrive": 3.75,
+    "tireCircumferenceM": 2.12
+  }
+},
+{
+  "id": "mclaren-artura-trophy-evo",
+  "name": "McLaren Artura Trophy EVO",
+  "tagline": "3.0 L Twin-Turbo V6 Race Car (Non-Hybrid) · 8,500 rpm · 6-speed sequential",
+  "pro": false,
+  "engine": {
+    "idleRpm": 950,
+    "redlineRpm": 8500,
+    "limiterRpm": 8800,
+    "launchRpm": 4200,
+    "peakTorqueNm": 585,
+    "peakTorqueRpm": 5500,
+    "engineBrakeNm": 62,
+    "firing": [
+      [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.6, "pan": -0.42, "tune": 1 },
+        { "pipeMs": 3.6, "pan": 0.42, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.52,
+      "pipeDamping": 0.18,
+      "formants": [
+        { "hz": 220, "q": 1.3, "gain": 1.2 },
+        { "hz": 920, "q": 2.5, "gain": 1.95 },
+        { "hz": 2900, "q": 3.1, "gain": 0.88 },
+        { "hz": 5000, "q": 3.6, "gain": 0.4 }
+      ],
+      "formantDry": 0.28,
+      "pulseMsIdle": 3.5,
+      "pulseMsRedline": 0.44,
+      "noise": 0.45,
+      "jitter": 0.015,
+      "cylinderTrim": 0.018,
+      "lope": 0.04,
+      "mufflerHz": [1950, 9000],
+      "bodyHz": 132,
+      "bodyDb": 5.5,
+      "intake": 0.36,
+      "intakeHz": 1380,
+      "whine": 0.1,
+      "whineRatio": 4.5,
+      "crackle": 0.92,
+      "popGain": 0.75,
+      "drive": 4.1,
+      "gain": 0.51
+    }
+  },
+  "vehicle": {
+    "massKg": 1269,
+    "cdA": 0.82,
+    "crr": 0.011,
+    "maxAccel": 10.8,
+    "peakPowerKw": 456,
+    "drivetrainEff": 0.92,
+    "ratios": [3.15, 2.18, 1.62, 1.28, 1.05, 0.88],
+    "finalDrive": 3.85,
+    "tireCircumferenceM": 2.12
+  }
+},
+{
+  "id": "mclaren-mcl-hy-gtr",
+  "name": "McLaren MCL-HY GTR",
+  "tagline": "2.9 L Twin-Turbo V6 Hybrid Hypercar · 9,000 rpm · 6-speed sequential",
+  "pro": false,
+  "engine": {
+    "idleRpm": 950,
+    "redlineRpm": 9000,
+    "limiterRpm": 9300,
+    "launchRpm": 4500,
+    "peakTorqueNm": 750,
+    "peakTorqueRpm": 6200,
+    "engineBrakeNm": 72,
+    "firing": [
+      [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.4, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 3.4, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.55,
+      "pipeDamping": 0.16,
+      "formants": [
+        { "hz": 240, "q": 1.35, "gain": 1.25 },
+        { "hz": 980, "q": 2.6, "gain": 2.0 },
+        { "hz": 3100, "q": 3.2, "gain": 0.9 },
+        { "hz": 5300, "q": 3.8, "gain": 0.42 }
+      ],
+      "formantDry": 0.26,
+      "pulseMsIdle": 3.3,
+      "pulseMsRedline": 0.4,
+      "noise": 0.48,
+      "jitter": 0.012,
+      "cylinderTrim": 0.015,
+      "lope": 0.045,
+      "mufflerHz": [2100, 9500],
+      "bodyHz": 140,
+      "bodyDb": 6,
+      "intake": 0.4,
+      "intakeHz": 1450,
+      "whine": 0.22,
+      "whineRatio": 4.8,
+      "crackle": 0.96,
+      "popGain": 0.8,
+      "drive": 4.25,
+      "gain": 0.52
+    }
+  },
+  "vehicle": {
+    "massKg": 1030,
+    "cdA": 0.92,
+    "crr": 0.011,
+    "maxAccel": 12.0,
+    "peakPowerKw": 537,
+    "drivetrainEff": 0.94,
+    "ratios": [3.15, 2.18, 1.62, 1.28, 1.05, 0.88],
+    "finalDrive": 3.85,
+    "tireCircumferenceM": 2.14
+  }
+}
 ];
