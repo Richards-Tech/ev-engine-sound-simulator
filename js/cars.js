@@ -3294,5 +3294,930 @@ window.MOTORSOUND_CARS = [
     "finalDrive": 3.73,
     "tireCircumferenceM": 2.22
   }
-}
+},
+{
+  "id": "acura-nsx-nc1",
+  "name": "Acura NSX",
+  "tagline": "3.5 L Twin-Turbo V6 Hybrid · 7,500 rpm · 9-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 850,
+    "redlineRpm": 7500,
+    "limiterRpm": 7800,
+    "launchRpm": 3500,
+    "peakTorqueNm": 645,
+    "peakTorqueRpm": 2000,
+    "engineBrakeNm": 58,
+    "firing": [
+      [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 4.1, "pan": -0.4, "tune": 1 },
+        { "pipeMs": 4.1, "pan": 0.4, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.48,
+      "pipeDamping": 0.24,
+      "formants": [
+        { "hz": 175, "q": 1.2, "gain": 1.1 },
+        { "hz": 780, "q": 2.3, "gain": 1.7 },
+        { "hz": 2500, "q": 2.8, "gain": 0.75 },
+        { "hz": 4200, "q": 3.2, "gain": 0.32 }
+      ],
+      "formantDry": 0.35,
+      "pulseMsIdle": 4.0,
+      "pulseMsRedline": 0.52,
+      "noise": 0.42,
+      "jitter": 0.018,
+      "cylinderTrim": 0.018,
+      "lope": 0.035,
+      "mufflerHz": [1750, 7800],
+      "bodyHz": 120,
+      "bodyDb": 4,
+      "intake": 0.26,
+      "intakeHz": 1200,
+      "whine": 0.22,
+      "whineRatio": 4.8,
+      "crackle": 0.8,
+      "popGain": 0.6,
+      "drive": 3.8,
+      "gain": 0.48
+    }
+  },
+  "vehicle": {
+    "massKg": 1759,
+    "cdA": 0.68,
+    "crr": 0.011,
+    "maxAccel": 9.8,
+    "peakPowerKw": 427,
+    "drivetrainEff": 0.9,
+    "ratios": [3.838, 2.433, 1.741, 1.314, 1.023, 0.825, 0.659, 0.536, 0.448],
+    "finalDrive": 3.583,
+    "tireCircumferenceM": 2.18
+  }
+},
+{
+  "id": "ferrari-488-gtb",
+  "name": "Ferrari 488 GTB",
+  "tagline": "3.9 L Twin-Turbo V8 · 8,000 rpm · 7-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 800,
+    "redlineRpm": 8000,
+    "limiterRpm": 8200,
+    "launchRpm": 3500,
+    "peakTorqueNm": 760,
+    "peakTorqueRpm": 3000,
+    "engineBrakeNm": 60,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 4.3, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 4.3, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.45,
+      "pipeDamping": 0.25,
+      "formants": [
+        { "hz": 155, "q": 1.1, "gain": 1.1 },
+        { "hz": 700, "q": 2.2, "gain": 1.7 },
+        { "hz": 2400, "q": 2.8, "gain": 0.7 },
+        { "hz": 4000, "q": 3.1, "gain": 0.32 }
+      ],
+      "formantDry": 0.38,
+      "pulseMsIdle": 4.1,
+      "pulseMsRedline": 0.55,
+      "noise": 0.4,
+      "jitter": 0.018,
+      "cylinderTrim": 0.02,
+      "lope": 0.038,
+      "mufflerHz": [1700, 8000],
+      "bodyHz": 118,
+      "bodyDb": 4,
+      "intake": 0.25,
+      "intakeHz": 1150,
+      "whine": 0.05,
+      "whineRatio": 4.2,
+      "crackle": 0.82,
+      "popGain": 0.62,
+      "drive": 3.7,
+      "gain": 0.48
+    }
+  },
+  "vehicle": {
+    "massKg": 1475,
+    "cdA": 0.67,
+    "crr": 0.011,
+    "maxAccel": 9.8,
+    "peakPowerKw": 492,
+    "drivetrainEff": 0.9,
+    "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62],
+    "finalDrive": 4.375,
+    "tireCircumferenceM": 2.16
+  }
+},
+{
+  "id": "lamborghini-huracan",
+  "name": "Lamborghini Huracan",
+  "tagline": "5.2 L V10 Naturally Aspirated · 8,500 rpm · 7-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 800,
+    "redlineRpm": 8500,
+    "limiterRpm": 8700,
+    "launchRpm": 4000,
+    "peakTorqueNm": 560,
+    "peakTorqueRpm": 6500,
+    "engineBrakeNm": 55,
+    "firing": [
+      [0, 1, 0], [72, 6, 1], [144, 5, 0], [216, 10, 1], [288, 2, 0],
+      [360, 7, 1], [432, 3, 0], [504, 8, 1], [576, 4, 0], [648, 9, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.6, "pan": -0.4, "tune": 1 },
+        { "pipeMs": 3.6, "pan": 0.4, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.45,
+      "pipeDamping": 0.2,
+      "formants": [
+        { "hz": 260, "q": 1.3, "gain": 1.1 },
+        { "hz": 1100, "q": 2.4, "gain": 2.0 },
+        { "hz": 3200, "q": 3.0, "gain": 0.9 },
+        { "hz": 5500, "q": 3.6, "gain": 0.35 }
+      ],
+      "formantDry": 0.32,
+      "pulseMsIdle": 3.6,
+      "pulseMsRedline": 0.38,
+      "noise": 0.4,
+      "jitter": 0.012,
+      "cylinderTrim": 0.015,
+      "lope": 0.025,
+      "mufflerHz": [1900, 9000],
+      "bodyHz": 140,
+      "bodyDb": 4,
+      "intake": 0.32,
+      "intakeHz": 1500,
+      "whine": 0.06,
+      "whineRatio": 4.2,
+      "crackle": 0.78,
+      "popGain": 0.58,
+      "drive": 3.9,
+      "gain": 0.46
+    }
+  },
+  "vehicle": {
+    "massKg": 1422,
+    "cdA": 0.64,
+    "crr": 0.011,
+    "maxAccel": 9.5,
+    "peakPowerKw": 449,
+    "drivetrainEff": 0.9,
+    "ratios": [3.13, 2.1, 1.52, 1.16, 0.92, 0.76, 0.62],
+    "finalDrive": 3.59,
+    "tireCircumferenceM": 2.12
+  }
+},
+{
+  "id": "aston-martin-vantage-gt4",
+  "name": "Aston Martin Vantage GT4",
+  "tagline": "4.0 L Twin-Turbo V8 Track Car · 7,000 rpm · 6-speed sequential",
+  "pro": false,
+  "engine": {
+    "idleRpm": 750,
+    "redlineRpm": 7000,
+    "limiterRpm": 7200,
+    "launchRpm": 3200,
+    "peakTorqueNm": 550,
+    "peakTorqueRpm": 2500,
+    "engineBrakeNm": 65,
+    "firing": [
+      [0, 1, 0], [90, 5, 1], [180, 4, 0], [270, 2, 1],
+      [360, 6, 0], [450, 3, 1], [540, 7, 0], [630, 8, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 5.0, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 5.0, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.5,
+      "pipeDamping": 0.28,
+      "formants": [
+        { "hz": 135, "q": 1.1, "gain": 1.2 },
+        { "hz": 560, "q": 2.1, "gain": 1.9 },
+        { "hz": 1850, "q": 2.7, "gain": 0.8 },
+        { "hz": 3500, "q": 3.1, "gain": 0.38 }
+      ],
+      "formantDry": 0.38,
+      "pulseMsIdle": 4.8,
+      "pulseMsRedline": 0.58,
+      "noise": 0.45,
+      "jitter": 0.02,
+      "cylinderTrim": 0.02,
+      "lope": 0.04,
+      "mufflerHz": [1500, 7200],
+      "bodyHz": 115,
+      "bodyDb": 5,
+      "intake": 0.28,
+      "intakeHz": 1100,
+      "whine": 0.08,
+      "whineRatio": 4.2,
+      "crackle": 0.88,
+      "popGain": 0.68,
+      "drive": 3.9,
+      "gain": 0.5
+    }
+  },
+  "vehicle": {
+    "massKg": 1395,
+    "cdA": 0.75,
+    "crr": 0.012,
+    "maxAccel": 9.2,
+    "peakPowerKw": 373,
+    "drivetrainEff": 0.88,
+    "ratios": [3.16, 2.15, 1.62, 1.28, 1.05, 0.89],
+    "finalDrive": 3.90,
+    "tireCircumferenceM": 2.15
+  }
+},
+{
+  "id": "ferrari-296-gtb",
+  "name": "Ferrari 296 GTB",
+  "tagline": "3.0 L Twin-Turbo V6 Hybrid · 8,500 rpm · 8-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 850,
+    "redlineRpm": 8500,
+    "limiterRpm": 8700,
+    "launchRpm": 3800,
+    "peakTorqueNm": 740,
+    "peakTorqueRpm": 6250,
+    "engineBrakeNm": 58,
+    "firing": [
+      [0, 1, 0], [120, 6, 1], [240, 3, 0], [360, 4, 1], [480, 2, 0], [600, 5, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.9, "pan": -0.42, "tune": 1 },
+        { "pipeMs": 3.9, "pan": 0.42, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.48,
+      "pipeDamping": 0.22,
+      "formants": [
+        { "hz": 210, "q": 1.25, "gain": 1.15 },
+        { "hz": 900, "q": 2.4, "gain": 1.85 },
+        { "hz": 2800, "q": 3.0, "gain": 0.82 },
+        { "hz": 4800, "q": 3.5, "gain": 0.36 }
+      ],
+      "formantDry": 0.33,
+      "pulseMsIdle": 3.6,
+      "pulseMsRedline": 0.46,
+      "noise": 0.44,
+      "jitter": 0.016,
+      "cylinderTrim": 0.018,
+      "lope": 0.035,
+      "mufflerHz": [1900, 8800],
+      "bodyHz": 128,
+      "bodyDb": 4,
+      "intake": 0.3,
+      "intakeHz": 1350,
+      "whine": 0.15,
+      "whineRatio": 4.6,
+      "crackle": 0.86,
+      "popGain": 0.65,
+      "drive": 3.9,
+      "gain": 0.49
+    }
+  },
+  "vehicle": {
+    "massKg": 1470,
+    "cdA": 0.66,
+    "crr": 0.011,
+    "maxAccel": 10.8,
+    "peakPowerKw": 610,
+    "drivetrainEff": 0.91,
+    "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62, 0.52],
+    "finalDrive": 4.375,
+    "tireCircumferenceM": 2.14
+  }
+},
+{
+  "id": "ferrari-488-challenge-evo",
+  "name": "Ferrari 488 Challenge Evo",
+  "tagline": "3.9 L Twin-Turbo V8 Track Monster · 8,000 rpm · 7-speed F1 DCT (Race Tuned)",
+  "pro": false,
+  "engine": {
+    "idleRpm": 900,
+    "redlineRpm": 8000,
+    "limiterRpm": 8300,
+    "launchRpm": 4000,
+    "peakTorqueNm": 760,
+    "peakTorqueRpm": 3000,
+    "engineBrakeNm": 65,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 4.1, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 4.1, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.5,
+      "pipeDamping": 0.2,
+      "formants": [
+        { "hz": 170, "q": 1.15, "gain": 1.15 },
+        { "hz": 750, "q": 2.3, "gain": 1.8 },
+        { "hz": 2600, "q": 2.9, "gain": 0.75 },
+        { "hz": 4300, "q": 3.3, "gain": 0.35 }
+      ],
+      "formantDry": 0.32,
+      "pulseMsIdle": 3.8,
+      "pulseMsRedline": 0.48,
+      "noise": 0.45,
+      "jitter": 0.02,
+      "cylinderTrim": 0.02,
+      "lope": 0.042,
+      "mufflerHz": [1800, 8300],
+      "bodyHz": 125,
+      "bodyDb": 5,
+      "intake": 0.3,
+      "intakeHz": 1250,
+      "whine": 0.08,
+      "whineRatio": 4.5,
+      "crackle": 0.9,
+      "popGain": 0.7,
+      "drive": 4.0,
+      "gain": 0.5
+    }
+  },
+  "vehicle": {
+    "massKg": 1340,
+    "cdA": 0.76,
+    "crr": 0.011,
+    "maxAccel": 10.5,
+    "peakPowerKw": 500,
+    "drivetrainEff": 0.92,
+    "ratios": [3.25, 2.24, 1.62, 1.24, 0.98, 0.8, 0.65],
+    "finalDrive": 4.45,
+    "tireCircumferenceM": 2.12
+  }
+},
+{
+  "id": "ferrari-488-pista",
+  "name": "Ferrari 488 Pista",
+  "tagline": "3.9 L Twin-Turbo V8 · 8,000 rpm · 7-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 850,
+    "redlineRpm": 8000,
+    "limiterRpm": 8300,
+    "launchRpm": 3800,
+    "peakTorqueNm": 770,
+    "peakTorqueRpm": 3000,
+    "engineBrakeNm": 62,
+    "firing": [
+      [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+      [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 4.2, "pan": -0.45, "tune": 1 },
+        { "pipeMs": 4.2, "pan": 0.45, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.48,
+      "pipeDamping": 0.22,
+      "formants": [
+        { "hz": 165, "q": 1.15, "gain": 1.15 },
+        { "hz": 720, "q": 2.25, "gain": 1.75 },
+        { "hz": 2500, "q": 2.85, "gain": 0.73 },
+        { "hz": 4150, "q": 3.2, "gain": 0.34 }
+      ],
+      "formantDry": 0.35,
+      "pulseMsIdle": 3.9,
+      "pulseMsRedline": 0.5,
+      "noise": 0.42,
+      "jitter": 0.019,
+      "cylinderTrim": 0.02,
+      "lope": 0.04,
+      "mufflerHz": [1750, 8200],
+      "bodyHz": 120,
+      "bodyDb": 4.5,
+      "intake": 0.28,
+      "intakeHz": 1200,
+      "whine": 0.06,
+      "whineRatio": 4.3,
+      "crackle": 0.85,
+      "popGain": 0.65,
+      "drive": 3.85,
+      "gain": 0.49
+    }
+  },
+  "vehicle": {
+    "massKg": 1385,
+    "cdA": 0.71,
+    "crr": 0.011,
+    "maxAccel": 10.2,
+    "peakPowerKw": 530,
+    "drivetrainEff": 0.91,
+    "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62],
+    "finalDrive": 4.375,
+    "tireCircumferenceM": 2.15
+  }
+},
+{
+  "id": "lamborghini-huracan-sto",
+  "name": "Lamborghini Huracan STO",
+  "tagline": "5.2 L V10 Naturally Aspirated Track Car · 8,500 rpm · 7-speed dual-clutch",
+  "pro": false,
+  "engine": {
+    "idleRpm": 850,
+    "redlineRpm": 8500,
+    "limiterRpm": 8750,
+    "launchRpm": 4200,
+    "peakTorqueNm": 565,
+    "peakTorqueRpm": 6500,
+    "engineBrakeNm": 60,
+    "firing": [
+      [0, 1, 0], [72, 6, 1], [144, 5, 0], [216, 10, 1], [288, 2, 0],
+      [360, 7, 1], [432, 3, 0], [504, 8, 1], [576, 4, 0], [648, 9, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.5, "pan": -0.4, "tune": 1 },
+        { "pipeMs": 3.5, "pan": 0.4, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.48,
+      "pipeDamping": 0.18,
+      "formants": [
+        { "hz": 270, "q": 1.35, "gain": 1.15 },
+        { "hz": 1150, "q": 2.5, "gain": 2.1 },
+        { "hz": 3400, "q": 3.2, "gain": 0.95 },
+        { "hz": 5800, "q": 3.8, "gain": 0.38 }
+      ],
+      "formantDry": 0.3,
+      "pulseMsIdle": 3.4,
+      "pulseMsRedline": 0.35,
+      "noise": 0.42,
+      "jitter": 0.01,
+      "cylinderTrim": 0.012,
+      "lope": 0.03,
+      "mufflerHz": [2000, 9200],
+      "bodyHz": 145,
+      "bodyDb": 5,
+      "intake": 0.35,
+      "intakeHz": 1550,
+      "whine": 0.08,
+      "whineRatio": 4.2,
+      "crackle": 0.85,
+      "popGain": 0.65,
+      "drive": 4.1,
+      "gain": 0.48
+    }
+  },
+  "vehicle": {
+    "massKg": 1339,
+    "cdA": 0.78,
+    "crr": 0.011,
+    "maxAccel": 10.2,
+    "peakPowerKw": 471,
+    "drivetrainEff": 0.92,
+    "ratios": [3.13, 2.1, 1.52, 1.16, 0.92, 0.76, 0.62],
+    "finalDrive": 3.94,
+    "tireCircumferenceM": 2.12
+  }
+},
+{
+  "id": "ferrari-296-challenge",
+  "name": "Ferrari 296 Challenge",
+  "tagline": "3.0 L Twin-Turbo V6 Track Car (Non-Hybrid) · 8,500 rpm · 7-speed F1 DCT",
+  "pro": false,
+  "engine": {
+    "idleRpm": 900,
+    "redlineRpm": 8500,
+    "limiterRpm": 8800,
+    "launchRpm": 4200,
+    "peakTorqueNm": 740,
+    "peakTorqueRpm": 6000,
+    "engineBrakeNm": 65,
+    "firing": [
+      [0, 1, 0], [120, 6, 1], [240, 3, 0], [360, 4, 1], [480, 2, 0], [600, 5, 1]
+    ],
+    "sound": {
+      "banks": [
+        { "pipeMs": 3.6, "pan": -0.42, "tune": 1 },
+        { "pipeMs": 3.6, "pan": 0.42, "tune": 1.01 }
+      ],
+      "pipeReflection": -0.5,
+      "pipeDamping": 0.18,
+      "formants": [
+        { "hz": 230, "q": 1.3, "gain": 1.2 },
+        { "hz": 950, "q": 2.5, "gain": 1.95 },
+        { "hz": 3000, "q": 3.2, "gain": 0.9 },
+        { "hz": 5200, "q": 3.8, "gain": 0.4 }
+      ],
+      "formantDry": 0.3,
+      "pulseMsIdle": 3.4,
+      "pulseMsRedline": 0.42,
+      "noise": 0.45,
+      "jitter": 0.012,
+      "cylinderTrim": 0.015,
+      "lope": 0.038,
+      "mufflerHz": [2000, 9000],
+      "bodyHz": 135,
+      "bodyDb": 5,
+      "intake": 0.35,
+      "intakeHz": 1450,
+      "whine": 0.05,
+      "whineRatio": 4.5,
+      "crackle": 0.9,
+      "popGain": 0.7,
+      "drive": 4.1,
+      "gain": 0.5
+    }
+  },
+  "vehicle": {
+    "massKg": 1330,
+    "cdA": 0.82,
+    "crr": 0.011,
+    "maxAccel": 10.8,
+    "peakPowerKw": 515,
+    "drivetrainEff": 0.92,
+    "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62],
+    "finalDrive": 4.375,
+    "tireCircumferenceM": 2.14
+  }
+},
+  {
+    "id": "mclaren-artura",
+    "name": "McLaren Artura",
+    "tagline": "3.0 L Twin-Turbo V6 Hybrid · 8,500 rpm · 8-speed SSG dual-clutch",
+    "pro": false,
+    "engine": {
+      "idleRpm": 850,
+      "redlineRpm": 8500,
+      "limiterRpm": 8700,
+      "launchRpm": 3500,
+      "peakTorqueNm": 720,
+      "peakTorqueRpm": 2250,
+      "engineBrakeNm": 55,
+      "firing": [
+        [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.8, "pan": -0.4, "tune": 1 },
+          { "pipeMs": 3.8, "pan": 0.4, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.48,
+        "pipeDamping": 0.22,
+        "formants": [
+          { "hz": 210, "q": 1.25, "gain": 1.1 },
+          { "hz": 880, "q": 2.4, "gain": 1.8 },
+          { "hz": 2750, "q": 3.0, "gain": 0.8 },
+          { "hz": 4700, "q": 3.5, "gain": 0.35 }
+        ],
+        "formantDry": 0.34,
+        "pulseMsIdle": 3.7,
+        "pulseMsRedline": 0.48,
+        "noise": 0.42,
+        "jitter": 0.016,
+        "cylinderTrim": 0.018,
+        "lope": 0.035,
+        "mufflerHz": [1850, 8700],
+        "bodyHz": 125,
+        "bodyDb": 4,
+        "intake": 0.3,
+        "intakeHz": 1300,
+        "whine": 0.18,
+        "whineRatio": 4.6,
+        "crackle": 0.82,
+        "popGain": 0.62,
+        "drive": 3.85,
+        "gain": 0.48
+      }
+    },
+    "vehicle": {
+      "massKg": 1395,
+      "cdA": 0.65,
+      "crr": 0.011,
+      "maxAccel": 10.2,
+      "peakPowerKw": 500,
+      "drivetrainEff": 0.91,
+      "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62, 0.52],
+      "finalDrive": 4.10,
+      "tireCircumferenceM": 2.14
+    }
+  },
+  {
+    "id": "mclaren-artura-spider",
+    "name": "McLaren Artura Spider",
+    "tagline": "3.0 L Twin-Turbo V6 Hybrid Convertible · 8,500 rpm · 8-speed SSG",
+    "pro": false,
+    "engine": {
+      "idleRpm": 850,
+      "redlineRpm": 8500,
+      "limiterRpm": 8700,
+      "launchRpm": 3500,
+      "peakTorqueNm": 720,
+      "peakTorqueRpm": 2250,
+      "engineBrakeNm": 55,
+      "firing": [
+        [0, 1, 0], [120, 4, 1], [240, 2, 0], [360, 5, 1], [480, 3, 0], [600, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.8, "pan": -0.42, "tune": 1 },
+          { "pipeMs": 3.8, "pan": 0.42, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.5,
+        "pipeDamping": 0.2,
+        "formants": [
+          { "hz": 215, "q": 1.25, "gain": 1.15 },
+          { "hz": 900, "q": 2.45, "gain": 1.85 },
+          { "hz": 2800, "q": 3.0, "gain": 0.82 },
+          { "hz": 4750, "q": 3.5, "gain": 0.36 }
+        ],
+        "formantDry": 0.32,
+        "pulseMsIdle": 3.7,
+        "pulseMsRedline": 0.48,
+        "noise": 0.44,
+        "jitter": 0.016,
+        "cylinderTrim": 0.018,
+        "lope": 0.035,
+        "mufflerHz": [1850, 8700],
+        "bodyHz": 128,
+        "bodyDb": 4.5,
+        "intake": 0.32,
+        "intakeHz": 1320,
+        "whine": 0.18,
+        "whineRatio": 4.6,
+        "crackle": 0.85,
+        "popGain": 0.65,
+        "drive": 3.9,
+        "gain": 0.49
+      }
+    },
+    "vehicle": {
+      "massKg": 1457,
+      "cdA": 0.67,
+      "crr": 0.011,
+      "maxAccel": 10.0,
+      "peakPowerKw": 515,
+      "drivetrainEff": 0.91,
+      "ratios": [3.15, 2.18, 1.57, 1.19, 0.94, 0.76, 0.62, 0.52],
+      "finalDrive": 4.10,
+      "tireCircumferenceM": 2.14
+    }
+  },
+  {
+    "id": "mclaren-750sv2",
+    "name": "McLaren 750S",
+    "tagline": "4.0 L Twin-Turbo V8 · 8,500 rpm · 7-speed seamless shift gearbox",
+    "pro": false,
+    "engine": {
+      "idleRpm": 850,
+      "redlineRpm": 8500,
+      "limiterRpm": 8700,
+      "launchRpm": 3600,
+      "peakTorqueNm": 800,
+      "peakTorqueRpm": 5500,
+      "engineBrakeNm": 60,
+      "firing": [
+        [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+        [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.0, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 4.0, "pan": 0.45, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.48,
+        "pipeDamping": 0.22,
+        "formants": [
+          { "hz": 175, "q": 1.2, "gain": 1.15 },
+          { "hz": 750, "q": 2.3, "gain": 1.8 },
+          { "hz": 2550, "q": 2.9, "gain": 0.75 },
+          { "hz": 4350, "q": 3.3, "gain": 0.35 }
+        ],
+        "formantDry": 0.35,
+        "pulseMsIdle": 3.9,
+        "pulseMsRedline": 0.5,
+        "noise": 0.42,
+        "jitter": 0.018,
+        "cylinderTrim": 0.02,
+        "lope": 0.038,
+        "mufflerHz": [1800, 8300],
+        "bodyHz": 120,
+        "bodyDb": 4.5,
+        "intake": 0.3,
+        "intakeHz": 1250,
+        "whine": 0.06,
+        "whineRatio": 4.3,
+        "crackle": 0.85,
+        "popGain": 0.65,
+        "drive": 3.9,
+        "gain": 0.49
+      }
+    },
+    "vehicle": {
+      "massKg": 1389,
+      "cdA": 0.68,
+      "crr": 0.011,
+      "maxAccel": 10.5,
+      "peakPowerKw": 552,
+      "drivetrainEff": 0.91,
+      "ratios": [3.17, 2.18, 1.60, 1.23, 0.97, 0.79, 0.65],
+      "finalDrive": 3.31,
+      "tireCircumferenceM": 2.14
+    }
+  },
+  {
+    "id": "mclaren-750s-spider",
+    "name": "McLaren 750S Spider",
+    "tagline": "4.0 L Twin-Turbo V8 Convertible · 8,500 rpm · 7-speed SSG",
+    "pro": false,
+    "engine": {
+      "idleRpm": 850,
+      "redlineRpm": 8500,
+      "limiterRpm": 8700,
+      "launchRpm": 3600,
+      "peakTorqueNm": 800,
+      "peakTorqueRpm": 5500,
+      "engineBrakeNm": 60,
+      "firing": [
+        [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+        [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 4.0, "pan": -0.42, "tune": 1 },
+          { "pipeMs": 4.0, "pan": 0.42, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.5,
+        "pipeDamping": 0.2,
+        "formants": [
+          { "hz": 180, "q": 1.2, "gain": 1.18 },
+          { "hz": 780, "q": 2.35, "gain": 1.85 },
+          { "hz": 2600, "q": 2.9, "gain": 0.78 },
+          { "hz": 4400, "q": 3.3, "gain": 0.36 }
+        ],
+        "formantDry": 0.32,
+        "pulseMsIdle": 3.9,
+        "pulseMsRedline": 0.5,
+        "noise": 0.44,
+        "jitter": 0.018,
+        "cylinderTrim": 0.02,
+        "lope": 0.038,
+        "mufflerHz": [1800, 8300],
+        "bodyHz": 125,
+        "bodyDb": 5,
+        "intake": 0.32,
+        "intakeHz": 1280,
+        "whine": 0.06,
+        "whineRatio": 4.3,
+        "crackle": 0.88,
+        "popGain": 0.68,
+        "drive": 3.95,
+        "gain": 0.5
+      }
+    },
+    "vehicle": {
+      "massKg": 1438,
+      "cdA": 0.70,
+      "crr": 0.011,
+      "maxAccel": 10.3,
+      "peakPowerKw": 552,
+      "drivetrainEff": 0.91,
+      "ratios": [3.17, 2.18, 1.60, 1.23, 0.97, 0.79, 0.65],
+      "finalDrive": 3.31,
+      "tireCircumferenceM": 2.14
+    }
+  },
+  {
+    "id": "mclaren-788hs",
+    "name": "McLaren 788HS",
+    "tagline": "4.0 L Twin-Turbo V8 Track Edition · 8,500 rpm · 7-speed race SSG",
+    "pro": false,
+    "engine": {
+      "idleRpm": 900,
+      "redlineRpm": 8500,
+      "limiterRpm": 8800,
+      "launchRpm": 4000,
+      "peakTorqueNm": 830,
+      "peakTorqueRpm": 5600,
+      "engineBrakeNm": 65,
+      "firing": [
+        [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+        [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.8, "pan": -0.45, "tune": 1 },
+          { "pipeMs": 3.8, "pan": 0.45, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.52,
+        "pipeDamping": 0.18,
+        "formants": [
+          { "hz": 190, "q": 1.25, "gain": 1.2 },
+          { "hz": 820, "q": 2.4, "gain": 1.95 },
+          { "hz": 2700, "q": 3.0, "gain": 0.85 },
+          { "hz": 4600, "q": 3.5, "gain": 0.4 }
+        ],
+        "formantDry": 0.3,
+        "pulseMsIdle": 3.6,
+        "pulseMsRedline": 0.45,
+        "noise": 0.45,
+        "jitter": 0.015,
+        "cylinderTrim": 0.018,
+        "lope": 0.042,
+        "mufflerHz": [1900, 8600],
+        "bodyHz": 130,
+        "bodyDb": 5.5,
+        "intake": 0.36,
+        "intakeHz": 1350,
+        "whine": 0.08,
+        "whineRatio": 4.5,
+        "crackle": 0.92,
+        "popGain": 0.72,
+        "drive": 4.1,
+        "gain": 0.52
+      }
+    },
+    "vehicle": {
+      "massKg": 1345,
+      "cdA": 0.78,
+      "crr": 0.011,
+      "maxAccel": 10.9,
+      "peakPowerKw": 588,
+      "drivetrainEff": 0.92,
+      "ratios": [3.17, 2.18, 1.60, 1.23, 0.97, 0.79, 0.65],
+      "finalDrive": 3.45,
+      "tireCircumferenceM": 2.12
+    }
+  },
+  {
+    "id": "mclaren-788hs-spider",
+    "name": "McLaren 788HS Spider",
+    "tagline": "4.0 L Twin-Turbo V8 Track Convertible · 8,500 rpm · 7-speed race SSG",
+    "pro": false,
+    "engine": {
+      "idleRpm": 900,
+      "redlineRpm": 8500,
+      "limiterRpm": 8800,
+      "launchRpm": 4000,
+      "peakTorqueNm": 830,
+      "peakTorqueRpm": 5600,
+      "engineBrakeNm": 65,
+      "firing": [
+        [0, 1, 0], [180, 8, 1], [360, 2, 0], [540, 7, 1],
+        [90, 4, 0], [270, 5, 1], [450, 3, 0], [630, 6, 1]
+      ],
+      "sound": {
+        "banks": [
+          { "pipeMs": 3.8, "pan": -0.42, "tune": 1 },
+          { "pipeMs": 3.8, "pan": 0.42, "tune": 1.01 }
+        ],
+        "pipeReflection": -0.52,
+        "pipeDamping": 0.18,
+        "formants": [
+          { "hz": 195, "q": 1.25, "gain": 1.22 },
+          { "hz": 850, "q": 2.45, "gain": 2.0 },
+          { "hz": 2750, "q": 3.0, "gain": 0.88 },
+          { "hz": 4650, "q": 3.5, "gain": 0.42 }
+        ],
+        "formantDry": 0.28,
+        "pulseMsIdle": 3.6,
+        "pulseMsRedline": 0.45,
+        "noise": 0.46,
+        "jitter": 0.015,
+        "cylinderTrim": 0.018,
+        "lope": 0.042,
+        "mufflerHz": [1900, 8600],
+        "bodyHz": 135,
+        "bodyDb": 6,
+        "intake": 0.38,
+        "intakeHz": 1380,
+        "whine": 0.08,
+        "whineRatio": 4.5,
+        "crackle": 0.94,
+        "popGain": 0.75,
+        "drive": 4.15,
+        "gain": 0.53
+      }
+    },
+    "vehicle": {
+      "massKg": 1398,
+      "cdA": 0.80,
+      "crr": 0.011,
+      "maxAccel": 10.7,
+      "peakPowerKw": 588,
+      "drivetrainEff": 0.92,
+      "ratios": [3.17, 2.18, 1.60, 1.23, 0.97, 0.79, 0.65],
+      "finalDrive": 3.45,
+      "tireCircumferenceM": 2.12
+    }
+  }
 ];

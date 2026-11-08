@@ -545,11 +545,11 @@
     'koenigsegg-one1': 'img/koenigsegg-one1.png',
     'koenigsegg-agera-r': 'img/koenigsegg-agera-r.png',
     'koenigsegg-agera': 'img/koenigsegg-agera.png',
-    'gma-t50': 'img/gma-t50.png',
+    'gma-t50': 'img/gma-t50.webp',
     'bugatti-tourbillon': 'img/bugatti-tourbillon.png',
     'corvette-z06-c8': 'img/corvette-z06-c8.png',
     'laferrari': 'img/laferrari.png',
-    'ferrari-sf90-stradale': 'img/ferrari-sf90-stradale.png',
+    'ferrari-sf90-stradale': 'img/ferrari-sf90-stradale.webp',
     'ferrari-488-gtb': 'img/ferrari-488-gtb.png',
     'ferrari-f8-tributo': 'img/ferrari-f8-tributo.png',
     'mclaren-gt4': 'img/mclaren-gt4.webp',
@@ -567,7 +567,22 @@
     'audi-r8-v10': 'img/audi-r8-v10.webp',
     'mercedes-amg-gt-r': 'img/mercedes-amg-gt-r.webp',
     'chevrolet-corvette-c8-grand-sport': 'img/chevrolet-corvette-c8-grand-sport.webp',
-    'ford-mustang-dark-horse-sc': 'img/ford-mustang-dark-horse-sc.webp'
+    'ford-mustang-dark-horse-sc': 'img/ford-mustang-dark-horse-sc.webp',
+    'acura-nsx-nc1':'img/acura-nsx-nc1.webp',
+    'ferrari-488-gtb':'img/ferrari-488-gtb.webp',
+    'lamborghini-huracan':'img/lamborghini-huracan.webp',
+    'aston-martin-vantage-gt4':'img/aston-martin-vantage-gt4.webp',
+    'ferrari-296-gtb':'img/ferrari-296-gtb.webp',
+    'ferrari-488-challenge-evo':'img/ferrari-488-challenge-evo.webp',
+    'ferrari-488-pista':'img/ferrari-488-pista.webp',
+    'lamborghini-huracan-sto':'img/lamborghini-huracan-sto.webp',
+    'ferrari-296-challenge':'img/ferrari-296-challenge.webp',
+    'mclaren-artura':'img/mclaren-artura.webp',
+    'mclaren-artura-spider':'img/mclaren-artura-spider.webp',
+    'mclaren-750sv2':'img/mclaren-750sv2.webp',
+    'mclaren-750s-spider':'img/mclaren-750s-spider.webp',
+    'mclaren-788hs':'img/mclaren-788hs.webp',
+    'mclaren-788hs-spider':'img/mclaren-788hs-spider.webp'
   };
 
 
