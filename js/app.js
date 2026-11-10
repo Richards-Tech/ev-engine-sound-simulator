@@ -1098,6 +1098,35 @@
     });
   }
 
+  function setupSettingTips() {
+    var buttons = document.querySelectorAll('.setting-tip-button');
+
+    function closeTips(except) {
+      Array.prototype.forEach.call(buttons, function (button) {
+        if (button === except) return;
+        button.parentNode.classList.remove('is-open');
+        button.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    Array.prototype.forEach.call(buttons, function (button) {
+      button.addEventListener('click', function () {
+        var tip = button.parentNode;
+        var open = !tip.classList.contains('is-open');
+        closeTips(button);
+        tip.classList.toggle('is-open', open);
+        button.setAttribute('aria-expanded', String(open));
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.setting-tip')) closeTips();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeTips();
+    });
+  }
+
   // Whine tuning sliders, only in the garage or when the site runs on this
   // computer or the local network (never on teslasound.io's own page), for
   // cars with a whine. -100 to 100: 0 is the car's own whine, ±100 an octave
@@ -1412,6 +1441,7 @@
     window.addEventListener('resize', holdCarCardHeight);
     renderCarPicker();
     setupTuning();
+    setupSettingTips();
     showCar();
     setupSlider('volume', 'volume', function (v) { audio.setVolume(v); });
     setupSlider('intensity', 'intensity', function (v) { vehicle.intensity = v; });

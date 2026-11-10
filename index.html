@@ -270,27 +270,62 @@
              opens it and remembers open or closed). The Pro line stays out. -->
         <button type="button" class="more-btn" id="moreBtn" aria-expanded="false" aria-controls="moreSettings">More settings</button>
         <div class="more-settings" id="moreSettings" hidden="">
-          <label class="slider">
-            <span>Intensity <output id="intensityOut"></output></span>
+          <div class="slider">
+            <div class="slider-heading">
+              <label class="slider-label" for="intensity">Intensity</label>
+              <span class="setting-tip">
+                <button type="button" class="setting-tip-button" aria-label="Thông tin về Intensity" aria-describedby="intensityTip" aria-expanded="false">i</button>
+                <span class="setting-tooltip" id="intensityTip" role="tooltip">Điều chỉnh độ nhạy của động cơ khi tăng tốc và thời điểm chuyển số. Giá trị cao khiến động cơ phản hồi mạnh hơn và chuyển số muộn hơn.</span>
+              </span>
+              <output id="intensityOut"></output>
+            </div>
             <input type="range" id="intensity" min="0" max="100" step="1">
-          </label>
-          <label class="slider">
-            <span>Character <output id="characterOut"></output></span>
+          </div>
+          <div class="slider">
+            <div class="slider-heading">
+              <label class="slider-label" for="character">Character</label>
+              <span class="setting-tip">
+                <button type="button" class="setting-tip-button" aria-label="Thông tin về Character" aria-describedby="characterTip" aria-expanded="false">i</button>
+                <span class="setting-tooltip" id="characterTip" role="tooltip">Thay đổi âm sắc từ tiếng động cơ nguyên bản, êm và trầm đến tiếng máy gằn, pô thoáng và có tiếng nổ lách tách.</span>
+              </span>
+              <output id="characterOut"></output>
+            </div>
             <input type="range" id="character" min="0" max="100" step="1">
-          </label>
-          <label class="slider">
-            <span>Crackle <output id="crackleOut"></output></span>
+          </div>
+          <div class="slider">
+            <div class="slider-heading">
+              <label class="slider-label" for="crackle">Crackle</label>
+              <span class="setting-tip">
+                <button type="button" class="setting-tip-button" aria-label="Thông tin về Crackle" aria-describedby="crackleTip" aria-expanded="false">i</button>
+                <span class="setting-tooltip" id="crackleTip" role="tooltip">Điều chỉnh mức độ tiếng pô nổ lách tách và tiếng động cơ bỏ máy. 0% là động cơ chạy êm, không có tiếng nổ.</span>
+              </span>
+              <output id="crackleOut"></output>
+            </div>
             <input type="range" id="crackle" min="0" max="100" step="1">
-          </label>
+          </div>
           <!-- Whine tuning: only shown when the site runs locally (see app.js). -->
-          <label class="slider" data-local="" hidden="">
-            <span>Whine pitch <output id="whinePitchOut"></output></span>
+          <div class="slider" data-local="" hidden="">
+            <div class="slider-heading">
+              <label class="slider-label" for="whinePitch">Whine pitch</label>
+              <span class="setting-tip">
+                <button type="button" class="setting-tip-button" aria-label="Thông tin về Whine pitch" aria-describedby="whinePitchTip" aria-expanded="false">i</button>
+                <span class="setting-tooltip" id="whinePitchTip" role="tooltip">Điều chỉnh cao độ tiếng rít của mô-tơ điện. 0 giữ nguyên âm thanh gốc; -100 thấp hơn một quãng tám, +100 cao hơn một quãng tám.</span>
+              </span>
+              <output id="whinePitchOut"></output>
+            </div>
             <input type="range" id="whinePitch" min="-100" max="100" step="1" value="0">
-          </label>
-          <label class="slider" data-local="" hidden="">
-            <span>Whine volume <output id="whineLevelOut"></output></span>
+          </div>
+          <div class="slider" data-local="" hidden="">
+            <div class="slider-heading">
+              <label class="slider-label" for="whineLevel">Whine volume</label>
+              <span class="setting-tip">
+                <button type="button" class="setting-tip-button" aria-label="Thông tin về Whine volume" aria-describedby="whineLevelTip" aria-expanded="false">i</button>
+                <span class="setting-tooltip" id="whineLevelTip" role="tooltip">Điều chỉnh âm lượng tiếng rít của mô-tơ điện. 0 giữ nguyên âm lượng gốc; -100 nhỏ hơn 4 lần, +100 lớn hơn 4 lần.</span>
+              </span>
+              <output id="whineLevelOut"></output>
+            </div>
             <input type="range" id="whineLevel" min="-100" max="100" step="1" value="0">
-          </label>
+          </div>
           <p class="hint" id="whineInfo" data-local="" hidden=""></p>
           <div class="units">
             <span>Units</span>

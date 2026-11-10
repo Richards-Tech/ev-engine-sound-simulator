@@ -456,9 +456,28 @@ body:not(.mode-demo) .demo-only { display: none; }
 .settings { display: flex; flex-direction: column; gap: 4px; padding-top: 8px; border-top: 1px solid var(--line); }
 
 .slider { display: grid; grid-template-columns: 140px 1fr; align-items: center; gap: 12px; font-size: 15px; color: var(--muted); }
-.slider span { display: flex; justify-content: space-between; }
+.slider-heading { position: relative; display: flex; align-items: center; min-width: 0; }
+.slider-label { flex: none; cursor: pointer; }
+.slider-heading > output { margin-left: auto; }
 .slider output { color: var(--text); font-variant-numeric: tabular-nums; }
 .slider[hidden] { display: none; }
+.setting-tip { position: relative; display: inline-flex; flex: none; margin-left: 8px; }
+.setting-tip-button {
+  display: inline-grid; place-items: center; width: 20px; height: 20px; padding: 0;
+  border: 1px solid currentColor; border-radius: 50%; background: transparent;
+  color: var(--accent-2); font-size: 13px; font-weight: 700; line-height: 1; cursor: help;
+}
+.setting-tip-button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+.setting-tooltip {
+  position: absolute; z-index: 30; top: calc(100% + 8px); left: 0; width: min(280px, calc(100vw - 48px));
+  padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--panel-2); color: var(--text); font-size: 13px; line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .45); visibility: hidden; opacity: 0;
+  pointer-events: none; transition: opacity .15s;
+}
+.setting-tip:hover .setting-tooltip,
+.setting-tip-button:focus-visible + .setting-tooltip,
+.setting-tip.is-open .setting-tooltip { visibility: visible; opacity: 1; pointer-events: auto; }
 
 input[type="range"] {
   -webkit-appearance: none;
