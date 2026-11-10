@@ -34,6 +34,7 @@ var EngineDSP = (function () {
   var TWO_PI = Math.PI * 2;
   var BLOCK = 128;
   var MAX_PULSES = 8;
+  var ROTARY_BRAP_ACCENTS = [0.62, 1.18, 0.72, 1.12];
 
   function clamp(x, lo, hi) { return x < lo ? lo : x > hi ? hi : x; }
   function lerp(a, b, t) { return a + (b - a) * t; }
@@ -811,6 +812,7 @@ var EngineDSP = (function () {
     this.pulseLen = sr / 1000 * lerp(s.pulseMsIdle, s.pulseMsRedline, Math.sqrt(rpmN)) * (1.12 - 0.3 * load);
     this.noiseAmt = s.noise * (0.3 + 0.7 * load + 1.2 * this.burble) * (0.55 + 0.9 * ch);
     this.noiseDecay = Math.exp(-1 / (sr * lerp(0.0045, 0.0012, rpmN)));
+    this.rotaryBrap = 0;
     // The RX-7's rotary exhaust pulse has a short, percussive tail. Keep this
     // override opt-in so every other engine retains the standard decay above.
     if (s.rotaryPulse) {
@@ -819,6 +821,22 @@ var EngineDSP = (function () {
         s.rotaryPulse.noiseDecaySRedline,
         rpmN
       )));
+      if (s.rotaryPulse.brap) {
+        // Ported rotaries have an uneven, sharp idle; fade the effect with revs and load.
+        var brap = s.rotaryPulse.brap;
+        var fadeRpm = s.rotaryPulse.brapFadeRpm || 1700;
+        var maxLoad = s.rotaryPulse.brapMaxLoad || 0.6;
+        this.rotaryBrap = clamp(
+          brap * (1 - smoothstep((this.rpm - cfg.idleRpm) / fadeRpm)) *
+          (1 - smoothstep(load / maxLoad)),
+          0,
+          1
+        );
+        if (s.rotaryPulse.brapNoiseDecayS) {
+          var normalDecayS = lerp(s.rotaryPulse.noiseDecaySIdle, s.rotaryPulse.noiseDecaySRedline, rpmN);
+          this.noiseDecay = Math.exp(-1 / (sr * lerp(normalDecayS, s.rotaryPulse.brapNoiseDecayS, this.rotaryBrap)));
+        }
+      }
     }
     this.jitter = s.jitter * (1 + 1.5 * ch * (1 - rpmN));
     // Lumpy cam: at idle, random cylinders burn weakly → the classic lope.
@@ -876,13 +894,18 @@ var EngineDSP = (function () {
     }
     var amp = this.ampBase * this.trim[this.evCyl[e]] * (1 + this.jitter * r.gauss());
     if (this.lope > 0 && r.next() < this.lope) amp *= 0.35 + 0.3 * r.next();
+    var rotaryBrap = this.rotaryBrap;
+    // Alternate pulse strength across the rotary firing sequence for the brap cadence.
+    var brapAccent = ROTARY_BRAP_ACCENTS[e % 4];
+    amp *= lerp(1, brapAccent, rotaryBrap);
     if (this.burble > 0) {
       amp *= clamp(1 + 0.6 * this.burble * r.gauss(), 0.1, 1.5);   // capped: uneven, never a bang
       if (r.next() < 0.35 * this.burble) amp *= 0.2 + 0.3 * r.next();
     }
     if (amp < 0) amp = 0;
-    var len = this.pulseLen * (0.85 + 0.3 * r.next());
-    bank.add(len, amp, amp * this.noiseAmt, this.noiseDecay);
+    var len = this.pulseLen * (0.85 + 0.3 * r.next()) * lerp(1, brapAccent > 1 ? 0.78 : 1, rotaryBrap);
+    var noiseAccent = lerp(1, brapAccent > 1 ? 1.8 : 0.55, rotaryBrap);
+    bank.add(len, amp, amp * this.noiseAmt * noiseAccent, this.noiseDecay);
     if (this.crackleProb > 0 && r.next() < this.crackleProb) this._pop(bank, 0.25 + 0.75 * r.next());
   };
 

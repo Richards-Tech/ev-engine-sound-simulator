@@ -4028,58 +4028,63 @@ window.MOTORSOUND_CARS = [
   {
   "id": "mazda-rx7-fd3s",
   "name": "Mazda RX-7 Spirit R (FD3S)",
-  "tagline": "1.3 L twin-turbo twin-rotor · 8,000 rpm · 5-speed manual",
+  "tagline": "1.3 L twin-turbo twin-rotor · 9,000 rpm · 5-speed manual",
   "pro": false,
   "engine": {
     "idleRpm": 750,
-    "redlineRpm": 8000,
-    "limiterRpm": 8200,
+    "redlineRpm": 9000,
+    "limiterRpm": 9200,
     "launchRpm": 3500,
     "peakTorqueNm": 314,
     "peakTorqueRpm": 5000,
-    "engineBrakeNm": 40,
-    // Each rotor fires once per eccentric-shaft revolution; the two rotors
-    // are phased 180° apart, giving four evenly spaced pulses per 720°.
+    "engineBrakeNm": 35,
     "firing": [
-      [0, 1, 0], [180, 2, 1], [360, 1, 0], [540, 2, 1]
+      [0, 1, 0],   // Rotor 1 nổ tại 0°
+      [180, 2, 1], // Rotor 2 nổ tại 180°
+      [360, 1, 0], // Rotor 1 nổ tại 360°
+      [540, 2, 1]  // Rotor 2 nổ tại 540°
     ],
     "sound": {
       "banks": [
-        { "pipeMs": 5.8, "pan": -0.12, "tune": 0.99 },
-        { "pipeMs": 6.1, "pan": 0.12, "tune": 1.01 }
+        { "pipeMs": 5.2, "pan": -0.15, "tune": 1.0 },
+        { "pipeMs": 5.4, "pan": 0.15, "tune": 1.0 }
       ],
-      "pipeReflection": -0.3,
-      "pipeDamping": 0.42,
+      "pipeReflection": -0.35,
+      "pipeDamping": 0.38,
       "formants": [
-        { "hz": 150, "q": 0.9, "gain": 0.55 },
-        { "hz": 360, "q": 1.1, "gain": 0.95 },
-        { "hz": 950, "q": 1.4, "gain": 1.25 },
-        { "hz": 2050, "q": 1.8, "gain": 1.05 },
-        { "hz": 3450, "q": 2, "gain": 0.62 },
-        { "hz": 4800, "q": 2.2, "gain": 0.28 }
+        { "hz": 220, "q": 1.0, "gain": 0.60 },
+        { "hz": 480, "q": 1.2, "gain": 1.10 },
+        { "hz": 1150, "q": 1.5, "gain": 1.50 },
+        { "hz": 2400, "q": 2.0, "gain": 1.35 },
+        { "hz": 3800, "q": 2.2, "gain": 0.90 },
+        { "hz": 5200, "q": 2.5, "gain": 0.45 }
       ],
-      "formantDry": 0.32,
-      "pulseMsIdle": 1.6,
-      "pulseMsRedline": 0.42,
-      "noise": 0.8,
+      "formantDry": 0.28,
+      "pulseMsIdle": 1.4,
+      "pulseMsRedline": 0.35,
+      "noise": 0.62,
       "rotaryPulse": {
-        "noiseDecaySIdle": 0.0015,
-        "noiseDecaySRedline": 0.0007
+        "noiseDecaySIdle": 0.0018,
+        "noiseDecaySRedline": 0.0006,
+        "brap": 0.95,
+        "brapFadeRpm": 1700,
+        "brapMaxLoad": 0.6,
+        "brapNoiseDecayS": 0.0008
       },
-      "jitter": 0.012,
-      "cylinderTrim": 0.01,
+      "jitter": 0.008,
+      "cylinderTrim": 0.0,
       "lope": 0,
-      "mufflerHz": [1500, 8800],
-      "bodyHz": 120,
-      "bodyDb": 2,
-      "intake": 0.3,
-      "intakeHz": 1900,
-      "whine": 0.06,
-      "whineRatio": 7,
-      "crackle": 0.28,
-      "popGain": 0.26,
-      "drive": 2.6,
-      "gain": 0.36
+      "mufflerHz": [1200, 9500],
+      "bodyHz": 135,
+      "bodyDb": 2.5,
+      "intake": 0.45,
+      "intakeHz": 2200,
+      "whine": 0.12,
+      "whineRatio": 7.0,
+      "crackle": 0.42,
+      "popGain": 0.38,
+      "drive": 2.8,
+      "gain": 0.55
     }
   },
   "vehicle": {
