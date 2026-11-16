@@ -13,7 +13,7 @@
   var PRO_KEY = 'motorsound.pro.v1';
   var DEVICE_KEY = 'motorsound.device.v1';
   var TRIAL_KEY = 'motorsound.trial.v1';
-  var TRIAL_SECONDS = 5 * 60 * 60;   // free engine time per day
+  var TRIAL_SECONDS = 5 * 60;       // free engine time per day
   var POLL_MS = 3000;
   var BONUS_TAPS = 30;          // secret: taps on the QR code ...
   var BONUS_SECONDS = 5 * 60;   // ... earn this much extra time ...
@@ -185,7 +185,7 @@
   // The modal is shared by paying, redeeming and handing over a code.
   function setMode(mode) {
     el.modal.dataset.mode = mode;
-    $('payTitle').textContent = mode === 'redeem' ? 'Redeem subscription' : mode === 'transfer' ? 'Add another device' : 'Unlock TeslaSound';
+    $('payTitle').textContent = mode === 'redeem' ? 'Redeem subscription' : mode === 'transfer' ? 'Add another device' : 'Unlock EvSound';
     el.form.hidden = true;
     el.shown.hidden = true;
     el.shown.textContent = '';
@@ -360,9 +360,9 @@
     clearTimeout(closeTimer);
     setMode('pay');
     el.lead.textContent = reason === 'trial'
-      ? 'Your free engine time for today is used up. Unlock TeslaSound to keep driving.'
+      ? 'Your free engine time for today is used up. Unlock EvSound to keep driving.'
       : reason === 'pin'
-        ? 'Choosing your cars is only available in TeslaSound Pro. Upgrade for every car and unlimited driving time.'
+        ? 'Choosing your cars is only available in EvSound Pro. Upgrade for every car and unlimited driving time.'
         : 'All engines and unlimited driving time.';
     el.modal.hidden = false;
     if (isPro()) return unlocked();

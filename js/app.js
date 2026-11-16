@@ -12,6 +12,8 @@
   var TICK_MS = 16;
   var MPS_TO_KMH = 3.6;
   var MPS_TO_MPH = 2.236936;
+  // Temporary catalog access; set false to restore Pro-only car selection.
+  var TEMP_ALL_CARS_UNLOCKED = true;
 
   var cars = window.MOTORSOUND_CARS;
   // pinned: ids of the cars a Pro user put on the front page (null: not chosen yet).
@@ -104,9 +106,9 @@
     return fallback;
   }
 
-  // A car needs its sound to be driven, and a Pro car needs Pro (not in the garage).
+  // A car needs its sound to be driven; Pro gating can be restored via the temporary flag.
   function drivable(c) {
-    return !c.soon && (GARAGE || !c.pro || Paywall.isPro());
+    return !c.soon && (GARAGE || TEMP_ALL_CARS_UNLOCKED || !c.pro || Paywall.isPro());
   }
 
   // What follows from the car: the tach's scale and what kind of sound it makes.
@@ -619,7 +621,7 @@
   function frontCars() {
     if (GARAGE) return cars.filter(function (c) { return c.garage; }).concat(cars.filter(function (c) { return !c.garage; }));
     var pro = Paywall.isPro(), ids = pinnedIds();
-    if (!pro) return cars.filter(function (c) { return !c.pro; });
+    if (!pro) return cars.filter(function (c) { return !c.pro && !c.soon; });
     return idsToCars(ids);
   }
 
@@ -742,8 +744,21 @@
       b.querySelector('.all-name').textContent = c.name;
       b.querySelector('.all-tag').textContent = c.tagline;
       b.addEventListener('click', function (e) {
-        if (!Paywall.isPro() && !trial) Paywall.open('pin');
-        else if (e.target.closest('.all-badge')) togglePin(c.id);
+        if (Paywall.isPro() || trial) {
+          if (e.target.closest('.all-badge')) togglePin(c.id);
+          return;
+        }
+        if (!TEMP_ALL_CARS_UNLOCKED) {
+          Paywall.open('pin');
+          return;
+        }
+        if (!drivable(c)) {
+          setStatus(c.name + ': the engine sound is coming soon.');
+          return;
+        }
+        selectCar(c);
+        track('Car picked', { car: c.name });
+        closeAllCars();
       });
       grid.appendChild(b);
       allTiles[c.id] = b;
@@ -947,7 +962,9 @@
     $('carsTitle').textContent = pro ? 'Your cars' : 'All cars';
     $('carsLead').hidden = pro;
     $('carsLead').textContent = pro ? ''
-      : 'Cars marked Free come with the free version. TeslaSound Pro unlocks every car and lets you pin your favorites to the front page.';
+      : TEMP_ALL_CARS_UNLOCKED
+        ? 'Select any car to test its sound. EvSound Pro lets you pin your favorites to the front page.'
+        : 'Cars marked Free come with the free version. EvSound Pro unlocks every car and lets you pin your favorites to the front page.';
     cars.forEach(function (c) {
       var b = allTiles[c.id];
       var pinned = pro && ids.indexOf(c.id) >= 0;

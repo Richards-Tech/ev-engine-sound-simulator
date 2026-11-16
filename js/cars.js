@@ -5,7 +5,7 @@
  *
  * To add a car, append another object with the same shape.
  *
- * `pro: true` marks a car that is only in TeslaSound Pro; the others are free.
+ * `pro: true` marks a car that is only in EvSound Pro; the others are free.
  * `soon: true` marks a car whose sound isn't made yet: it has no `engine` or
  * `vehicle` block, shows in "Show all cars" and can be pinned, but can't be driven.
  */
@@ -754,7 +754,7 @@ window.MOTORSOUND_CARS = [
   "id": "mercedes-amg-gt-r",
   "name": "Mercedes-AMG GT R",
   "tagline": "4.0 L Twin-Turbo V8 · 7,000 rpm · 7-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 750,
     "redlineRpm": 7000,
@@ -816,7 +816,7 @@ window.MOTORSOUND_CARS = [
   "id": "chevrolet-corvette-c8-grand-sport",
   "name": "Chevrolet Corvette C8 Grand Sport",
   "tagline": "6.2 L Naturally Aspirated V8 · 6,500 rpm · 8-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 650,
     "redlineRpm": 6500,
@@ -878,7 +878,7 @@ window.MOTORSOUND_CARS = [
   "id": "ford-mustang-dark-horse-sc",
   "name": "Ford Mustang Dark Horse SC",
   "tagline": "5.2 L Supercharged V8 · 7,500 rpm · 10-speed automatic",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 700,
     "redlineRpm": 7500,
@@ -940,7 +940,7 @@ window.MOTORSOUND_CARS = [
   "id": "acura-nsx-nc1",
   "name": "Acura NSX",
   "tagline": "3.5 L Twin-Turbo V6 Hybrid · 7,500 rpm · 9-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 850,
     "redlineRpm": 7500,
@@ -1001,7 +1001,7 @@ window.MOTORSOUND_CARS = [
   "id": "ferrari-488-gtb",
   "name": "Ferrari 488 GTB",
   "tagline": "3.9 L Twin-Turbo V8 · 8,000 rpm · 7-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 800,
     "redlineRpm": 8000,
@@ -1063,7 +1063,7 @@ window.MOTORSOUND_CARS = [
   "id": "lamborghini-huracan",
   "name": "Lamborghini Huracan",
   "tagline": "5.2 L V10 Naturally Aspirated · 8,500 rpm · 7-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 800,
     "redlineRpm": 8500,
@@ -1125,7 +1125,7 @@ window.MOTORSOUND_CARS = [
   "id": "aston-martin-vantage-gt4",
   "name": "Aston Martin Vantage GT4",
   "tagline": "4.0 L Twin-Turbo V8 Track Car · 7,000 rpm · 6-speed sequential",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 750,
     "redlineRpm": 7000,
@@ -1187,7 +1187,7 @@ window.MOTORSOUND_CARS = [
   "id": "ferrari-296-gtb",
   "name": "Ferrari 296 GTB",
   "tagline": "3.0 L Twin-Turbo V6 Hybrid · 8,500 rpm · 8-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 850,
     "redlineRpm": 8500,
@@ -1248,7 +1248,7 @@ window.MOTORSOUND_CARS = [
   "id": "ferrari-488-challenge-evo",
   "name": "Ferrari 488 Challenge Evo",
   "tagline": "3.9 L Twin-Turbo V8 Track Monster · 8,000 rpm · 7-speed F1 DCT (Race Tuned)",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 900,
     "redlineRpm": 8000,
@@ -1310,7 +1310,7 @@ window.MOTORSOUND_CARS = [
   "id": "ferrari-488-pista",
   "name": "Ferrari 488 Pista",
   "tagline": "3.9 L Twin-Turbo V8 · 8,000 rpm · 7-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 850,
     "redlineRpm": 8000,
@@ -1372,7 +1372,7 @@ window.MOTORSOUND_CARS = [
   "id": "lamborghini-huracan-sto",
   "name": "Lamborghini Huracan STO",
   "tagline": "5.2 L V10 Naturally Aspirated Track Car · 8,500 rpm · 7-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 850,
     "redlineRpm": 8500,
@@ -1434,7 +1434,7 @@ window.MOTORSOUND_CARS = [
   "id": "ferrari-296-challenge",
   "name": "Ferrari 296 Challenge",
   "tagline": "3.0 L Twin-Turbo V6 Track Car (Non-Hybrid) · 8,500 rpm · 7-speed F1 DCT",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 900,
     "redlineRpm": 8500,
@@ -1495,7 +1495,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-artura",
     "name": "McLaren Artura",
     "tagline": "3.0 L Twin-Turbo V6 Hybrid · 8,500 rpm · 8-speed SSG dual-clutch",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 850,
       "redlineRpm": 8500,
@@ -1556,7 +1556,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-artura-spider",
     "name": "McLaren Artura Spider",
     "tagline": "3.0 L Twin-Turbo V6 Hybrid Convertible · 8,500 rpm · 8-speed SSG",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 850,
       "redlineRpm": 8500,
@@ -1617,7 +1617,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-750sv2",
     "name": "McLaren 750S",
     "tagline": "4.0 L Twin-Turbo V8 · 8,500 rpm · 7-speed seamless shift gearbox",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 850,
       "redlineRpm": 8500,
@@ -1679,7 +1679,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-750s-spider",
     "name": "McLaren 750S Spider",
     "tagline": "4.0 L Twin-Turbo V8 Convertible · 8,500 rpm · 7-speed SSG",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 850,
       "redlineRpm": 8500,
@@ -1741,7 +1741,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-788hs",
     "name": "McLaren 788HS",
     "tagline": "4.0 L Twin-Turbo V8 Track Edition · 8,500 rpm · 7-speed race SSG",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 900,
       "redlineRpm": 8500,
@@ -1803,7 +1803,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-788hs-spider",
     "name": "McLaren 788HS Spider",
     "tagline": "4.0 L Twin-Turbo V8 Track Convertible · 8,500 rpm · 7-speed race SSG",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 900,
       "redlineRpm": 8500,
@@ -1865,7 +1865,7 @@ window.MOTORSOUND_CARS = [
   "id": "mclaren-gts",
   "name": "McLaren GTS",
   "tagline": "4.0 L Twin-Turbo V8 · 8,500 rpm · 7-speed SSG dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 800,
     "redlineRpm": 8500,
@@ -1927,7 +1927,7 @@ window.MOTORSOUND_CARS = [
   "id": "mclaren-w1",
   "name": "McLaren W1",
   "tagline": "4.0 L Twin-Turbo V8 Hybrid · 9,200 rpm · 8-speed dual-clutch",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 900,
     "redlineRpm": 9200,
@@ -1989,7 +1989,7 @@ window.MOTORSOUND_CARS = [
   "id": "mclaren-720s-gt3-evo",
   "name": "McLaren 720S GT3 EVO",
   "tagline": "4.0 L Twin-Turbo V8 Race Car · 8,500 rpm · 6-speed sequential",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 950,
     "redlineRpm": 8500,
@@ -2051,7 +2051,7 @@ window.MOTORSOUND_CARS = [
   "id": "mclaren-artura-trophy-evo",
   "name": "McLaren Artura Trophy EVO",
   "tagline": "3.0 L Twin-Turbo V6 Race Car (Non-Hybrid) · 8,500 rpm · 6-speed sequential",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 950,
     "redlineRpm": 8500,
@@ -2112,7 +2112,7 @@ window.MOTORSOUND_CARS = [
   "id": "mclaren-mcl-hy-gtr",
   "name": "McLaren MCL-HY GTR",
   "tagline": "2.9 L Twin-Turbo V6 Hybrid Hypercar · 9,000 rpm · 6-speed sequential",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 950,
     "redlineRpm": 9000,
@@ -2172,6 +2172,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'tesla-roadster-thrust',
     name: 'Tesla Roadster',
+    pro: true,
     tagline: 'Four cold-gas thrusters · 80+ kN · two rear motors, 1 MW',
     // Where the thrusters' jets leave the picture (thruster-fx.js): the
     // black tail panel, as fractions of the picture; h is the jet's
@@ -2270,6 +2271,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'city-shifter',
     name: 'Shift Maniac',
+    pro: true,
     tagline: 'Flat-six scream · 9,000 rpm · 10 short gears · tops out at 120 km/h',
     engine: {
       idleRpm: 850,
@@ -2342,6 +2344,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'gt3',
     name: 'Porsche 911 GT3',
+    pro: true,
     tagline: '4.0 L flat-six · 9,000 rpm · 7-speed PDK',
     engine: {
       idleRpm: 850,
@@ -2403,6 +2406,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'v8-muscle',
     name: 'V8 Muscle',
+    pro: true,
     tagline: '6.2 L crossplane V8 · 6-speed · dual exhaust',
     engine: {
       idleRpm: 760,
@@ -2466,6 +2470,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'ferrari-v12',
     name: 'Ferrari V12',
+    pro: true,
     tagline: '6.5 L V12 · 8,900 rpm · 7-speed dual-clutch',
     engine: {
       idleRpm: 900,
@@ -2530,6 +2535,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'hellcat',
     name: 'Dodge Hellcat',
+    pro: true,
     tagline: '6.2 L supercharged V8 · 6,200 rpm · 6-speed manual',
     engine: {
       idleRpm: 750,
@@ -2620,6 +2626,7 @@ window.MOTORSOUND_CARS = [
   {
     id: 'haunted-hearse',
     name: 'Haunted Hearse',
+    pro: true,
     tagline: 'No engine · heartbeat at a stop · ghost choir · church bell',
     engine: {
       // No engine sound, only Halloween sounds (HauntedDSP in engine-dsp.js).
@@ -2665,7 +2672,7 @@ window.MOTORSOUND_CARS = [
     name: 'ElectricZen',
     tagline: 'Electric buzz · deep when slow, light when fast · near-silent regen',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       // An electric motor: ElectricDSP instead of the combustion synthesizer,
       // and a single-speed drivetrain in vehicle.js. rpm is the motor's
@@ -2709,8 +2716,7 @@ window.MOTORSOUND_CARS = [
     name: 'Lamborghini Urus',
     tagline: '4.0 L twin-turbo V8 · 6,800 rpm · 8-speed automatic',
     // // pro: true,
-    pro: false,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 650,
       redlineRpm: 6700,
@@ -2798,7 +2804,7 @@ window.MOTORSOUND_CARS = [
     name: 'F1 Slipstream',
     tagline: '1.6 L turbo V6 hybrid · 12,000 rpm · 8-speed seamless',
     // // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 4000,
       redlineRpm: 12000,
@@ -2892,7 +2898,7 @@ window.MOTORSOUND_CARS = [
     name: 'Ferrari Enzo',
     tagline: '6.0 L V12 · 8,200 rpm · 6-speed paddle shift',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 800,
       redlineRpm: 8000,
@@ -2959,7 +2965,7 @@ window.MOTORSOUND_CARS = [
     name: 'Lamborghini Veneno',
     tagline: '6.5 L V12 · 8,500 rpm · 7-speed single-clutch',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 1000,
       redlineRpm: 8400,
@@ -3023,7 +3029,7 @@ window.MOTORSOUND_CARS = [
     name: 'Audi RS 6 Avant (C8)',
     tagline: '4.0 L twin-turbo V8 · 6,800 rpm · 8-speed automatic',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 600,
       redlineRpm: 6700,
@@ -3088,7 +3094,7 @@ window.MOTORSOUND_CARS = [
     name: 'Nissan GT-R NISMO (R35, 2024)',
     tagline: '3.8 L twin-turbo V6 · 7,100 rpm · 6-speed dual-clutch',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 700,
       redlineRpm: 7000,
@@ -3155,7 +3161,7 @@ window.MOTORSOUND_CARS = [
     name: 'Bugatti Chiron',
     tagline: '8.0 L quad-turbo W16 · 6,700 rpm · 7-speed dual-clutch',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 700,
       redlineRpm: 6600,
@@ -3223,7 +3229,7 @@ window.MOTORSOUND_CARS = [
     name: 'Porsche 911 Turbo S (992)',
     tagline: '3.7 L twin-turbo flat-six · 7,200 rpm · 8-speed PDK',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 750,
       redlineRpm: 7000,
@@ -3290,7 +3296,7 @@ window.MOTORSOUND_CARS = [
     name: 'BMW M3 Competition (G80)',
     tagline: '3.0 L twin-turbo inline-six · 7,200 rpm · 8-speed automatic',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 700,
       redlineRpm: 7000,
@@ -3351,7 +3357,7 @@ window.MOTORSOUND_CARS = [
     "id": "corvette-z06-c8",
     "name": "Chevrolet Corvette Z06 (C8)",
     "tagline": "5.5 L LT6 Flat-Plane V8 · 8,600 rpm · 8-speed dual-clutch",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 750,
       "redlineRpm": 8600,
@@ -3414,7 +3420,7 @@ window.MOTORSOUND_CARS = [
     name: 'Porsche 911 GT3 RS',
     tagline: '4.0 L flat-six · 9,000 rpm · 7-speed PDK',
     // pro: true,
-    pro: false,
+    pro: true,
     engine: {
       idleRpm: 900,
       redlineRpm: 8800,
@@ -3480,6 +3486,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "lamborghini-revuelto",
     "name": "Lamborghini Revuelto",
+    "pro": true,
     "tagline": "6.5 L V12 Hybrid · 9,500 rpm · 8-speed dual-clutch",
     "engine": {
       "idleRpm": 1000,
@@ -3541,6 +3548,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "lamborghini-temerario",
     "name": "Lamborghini Temerario",
+    "pro": true,
     "tagline": "4.0 L Twin-Turbo V8 Hybrid · 10,000 rpm · 8-speed dual-clutch",
     "engine": {
       "idleRpm": 1000,
@@ -3601,6 +3609,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "lamborghini-aventador-svj",
     "name": "Lamborghini Aventador SVJ",
+    "pro": true,
     "tagline": "6.5 L V12 · 8,500 rpm · 7-speed ISR automated manual",
     "engine": {
       "idleRpm": 900,
@@ -3662,6 +3671,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "ferrari-812-superfast",
     "name": "Ferrari 812 Superfast",
+    "pro": true,
     "tagline": "6.5 L V12 · 8,500 rpm · 7-speed dual-clutch",
     "engine": {
       "idleRpm": 800,
@@ -3723,6 +3733,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "ferrari-purosangue",
     "name": "Ferrari Purosangue",
+    "pro": true,
     "tagline": "6.5 L V12 · 8,250 rpm · 8-speed dual-clutch",
     "engine": {
       "idleRpm": 800,
@@ -3784,6 +3795,7 @@ window.MOTORSOUND_CARS = [
   {
     "id": "ferrari-296-gt3",
     "name": "Ferrari 296 GT3",
+    "pro": true,
     "tagline": "3.0 L Twin-Turbo V6 (120°) · 7,250 rpm · 6-speed Sequential",
     "engine": {
       "idleRpm": 1000,
@@ -3845,7 +3857,7 @@ window.MOTORSOUND_CARS = [
     "id": "bmw-m2",
     "name": "BMW M2 (G87)",
     "tagline": "3.0 L twin-turbo inline-six · 7,200 rpm · 8-speed automatic",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 700,
       "redlineRpm": 7000,
@@ -3906,7 +3918,7 @@ window.MOTORSOUND_CARS = [
     "id": "bmw-m4",
     "name": "BMW M4 Competition (G82)",
     "tagline": "3.0 L twin-turbo inline-six · 7,200 rpm · 8-speed automatic",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 700,
       "redlineRpm": 7000,
@@ -3967,7 +3979,7 @@ window.MOTORSOUND_CARS = [
     "id": "bmw-m5",
     "name": "BMW M5 (G90)",
     "tagline": "4.4 L twin-turbo V8 hybrid · 7,200 rpm · 8-speed automatic",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 650,
       "redlineRpm": 7000,
@@ -4029,7 +4041,7 @@ window.MOTORSOUND_CARS = [
   "id": "mazda-rx7-fd3s",
   "name": "Mazda RX-7 Spirit R (FD3S)",
   "tagline": "1.3 L twin-turbo twin-rotor · 9,000 rpm · 5-speed manual",
-  "pro": false,
+  "pro": true,
   "engine": {
     "idleRpm": 750,
     "redlineRpm": 9000,
@@ -4103,7 +4115,7 @@ window.MOTORSOUND_CARS = [
     "id": "lexus-lfa",
     "name": "Lexus LFA",
     "tagline": "4.8 L Yamaha-tuned V10 · 9,000 rpm · 6-speed ASG",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 950,
       "redlineRpm": 9000,
@@ -4165,7 +4177,7 @@ window.MOTORSOUND_CARS = [
     "id": "koenigsegg-jesko",
     "name": "Koenigsegg Jesko",
     "tagline": "5.0 L Flat-Plane Twin-Turbo V8 · 8,500 rpm · 9-speed LST",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 950,
       "redlineRpm": 8500,
@@ -4227,7 +4239,7 @@ window.MOTORSOUND_CARS = [
     "id": "gma-t50",
     "name": "GMA T.50",
     "tagline": "3.9 L Cosworth High-Rev V12 · 12,100 rpm · 6-speed manual",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 1200,
       "redlineRpm": 12100,
@@ -4289,7 +4301,7 @@ window.MOTORSOUND_CARS = [
     "id": "bugatti-tourbillon",
     "name": "Bugatti Tourbillon",
     "tagline": "8.3 L Cosworth NA V16 Hybrid · 9,000 rpm · 8-speed DCT",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 850,
       "redlineRpm": 9000,
@@ -4351,7 +4363,7 @@ window.MOTORSOUND_CARS = [
     "id": "laferrari",
     "name": "LaFerrari",
     "tagline": "6.3 L V12 Hybrid · 9,250 rpm · 7-speed dual-clutch",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 900,
       "redlineRpm": 9250,
@@ -4413,7 +4425,7 @@ window.MOTORSOUND_CARS = [
     "id": "ferrari-sf90-stradale",
     "name": "Ferrari SF90 Stradale",
     "tagline": "4.0 L Twin-Turbo V8 PHEV · 8,000 rpm · 8-speed dual-clutch",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 800,
       "redlineRpm": 8000,
@@ -4475,7 +4487,7 @@ window.MOTORSOUND_CARS = [
     "id": "mclaren-gt4",
     "name": "McLaren 570S GT4",
     "tagline": "3.8 L Twin-Turbo V8 Track Car · 7,500 rpm · 7-speed seamless shift",
-    "pro": false,
+    "pro": true,
     "engine": {
       "idleRpm": 800,
       "redlineRpm": 7500,
