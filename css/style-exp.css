@@ -817,7 +817,7 @@ html.no-scroll, html.no-scroll body { overflow: hidden; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; }
 .foot-links a, .legal a, .faq a { color: var(--accent-2); }
 
-/* "TeslaSound is a Lifemock production", centered at the very bottom. */
+/* "EvSound is a Lifemock production", centered at the very bottom. */
 .foot-made { margin-top: 28px; padding: 28px 16px 36px; border-top: 1px solid var(--line); font-size: 14px; line-height: 1.6; text-align: center; }
 .foot-made p { margin: 0 auto 10px; max-width: 760px; }
 .foot-made a { color: var(--text); text-decoration: none; }

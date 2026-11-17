@@ -305,7 +305,7 @@
       el.form.hidden = false;
       el.code.focus();
       if (r.state === 'bad_code') return setHint('That code did not work. A code lasts 10 minutes and works once. Make a new one on the other device.', 'error');
-      el.lead.textContent = 'Enter the code from a device that already has TeslaSound Pro. On that device tap "Add another device". No Pro device? Open teslasound.io/redeem to get a code by email.';
+      el.lead.textContent = 'Enter the code from a device that already has EvSound Pro. On that device tap "Add another device". No Pro device? Open teslasound.io/redeem to get a code by email.';
       setHint('', 'wait');
     });
   }
@@ -349,7 +349,7 @@
       return postJson('/api/transfer', { device: device, cus: pro.cus }).then(function (r) {
         el.shown.textContent = r.code.slice(0, 4) + '-' + r.code.slice(4);
         el.shown.hidden = false;
-        setHint('On the other device, open TeslaSound and tap "Redeem subscription", then enter this code. It works once, for 10 minutes.', 'wait');
+        setHint('On the other device, open EvSound and tap "Redeem subscription", then enter this code. It works once, for 10 minutes.', 'wait');
       }, function (err) {
         setHint(err.code === 'not_pro' ? 'This device is not part of an active subscription.' : failText(err), 'error');
       });

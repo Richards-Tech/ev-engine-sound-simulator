@@ -1,4 +1,4 @@
-var CACHE_NAME = 'teslasound-v88';
+var CACHE_NAME = 'evsound-v88';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(self.skipWaiting());
@@ -8,7 +8,7 @@ self.addEventListener('activate', function (event) {
   event.waitUntil(
     caches.keys().then(function (keys) {
       return Promise.all(keys.map(function (key) {
-        if (key.indexOf('teslasound-v') === 0 && key !== CACHE_NAME) {
+        if ((key.indexOf('teslasound-v') === 0 || key.indexOf('evsound-v') === 0) && key !== CACHE_NAME) {
           return caches.delete(key);
         }
       }));

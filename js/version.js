@@ -1,6 +1,6 @@
 /*
  * version.js — shows the app version as the last line of the footer.
- * The version is the cache number in sw.js ('teslasound-v87' → "Version 87"),
+ * The version is the cache number in sw.js ('evsound-v88' → "Version 88"),
  * which goes up on every release, so there is only one number to bump.
  */
 (function () {
@@ -21,7 +21,7 @@
   function init() {
     if (!window.fetch || !document.querySelector('.foot-made')) return;
     fetch('sw.js').then(function (res) { return res.ok ? res.text() : ''; }).then(function (src) {
-      var m = /teslasound-v(\d+)/.exec(src);
+      var m = /evsound-v(\d+)/.exec(src);
       if (m) show(m[1]);
     }).catch(function () { /* offline with no cached copy: leave the line out */ });
   }

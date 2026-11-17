@@ -1,8 +1,8 @@
 # ev-engine-sound-simulator
-Live engine sound simulator (TeslaSound - Vinfast) for VinFast and other EVs using Web Audio API and real-time GPS speed tracking.
+Live engine sound simulator (EvSound - Vinfast) for VinFast and other EVs using Web Audio API and real-time GPS speed tracking.
 
 
-# 🚗 EV Engine Sound Simulator (TeslaSound - Vinfast)
+# 🚗 EV Engine Sound Simulator (EvSound - Vinfast)
 
 A real-time, browser-based engine sound synthesizer designed for VinFast and other Electric Vehicles (EVs). It uses the **Web Audio API** and **GPS speed tracking** to synthesize authentic gas engine sounds (V8, V12, Flat-Six, etc.) directly in the vehicle's browser.
 
