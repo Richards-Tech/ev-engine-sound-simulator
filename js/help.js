@@ -1,4 +1,9 @@
 /*
+ * description: Help, FAQ and support interactions on the main page.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * help.js — small extras on the front page (index.html): in the help bar at
  * the fold, "How to use it" and "Questions" open their panel in place, one
  * at a time; under the gauge, "Explore more" shows for people without Pro.

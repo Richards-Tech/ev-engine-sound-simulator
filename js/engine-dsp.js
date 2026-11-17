@@ -1,4 +1,9 @@
 /*
+ * description: Real-time procedural synthesis of combustion engine sounds.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * engine-dsp.js — procedural combustion-engine synthesizer.
  *
  * This file is loaded twice:

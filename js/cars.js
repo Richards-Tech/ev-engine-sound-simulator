@@ -1,4 +1,9 @@
 /*
+ * description: Car profiles with engine sound and vehicle physics settings.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * Car profiles. Each profile has an `engine` block (consumed by both the
  * synthesizer in engine-dsp.js and the drivetrain simulation in vehicle.js)
  * and a `vehicle` block (drivetrain + physics for the simulation).

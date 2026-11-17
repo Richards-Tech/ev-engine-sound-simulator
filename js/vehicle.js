@@ -1,4 +1,9 @@
 /*
+ * description: Vehicle drivetrain and acceleration simulation.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * vehicle.js — virtual drivetrain.
  *
  * Turns road speed into what a combustion car would be doing at that speed:

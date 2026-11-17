@@ -1,4 +1,9 @@
 /*
+ * description: Geolocation-based speed and acceleration tracking.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * gps.js — speed and acceleration from the browser's Geolocation API.
  *
  * Fixes arrive about once per second on phones and about ten times per

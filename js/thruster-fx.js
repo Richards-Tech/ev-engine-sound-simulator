@@ -1,4 +1,9 @@
 /*
+ * description: Visual effects for vehicles with cold-gas thrusters.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * The thruster effect for a car with cold-gas thrusters (engine.type
  * 'thruster'): while the jets fire, the car's picture blasts them out of its
  * tail, a pale core with shock diamonds ("Mach diamonds") inside a billowing

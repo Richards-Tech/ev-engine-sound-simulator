@@ -1,4 +1,9 @@
 /*
+ * description: Web Audio setup and playback for synthesized engine sounds.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * audio.js — Web Audio plumbing around the engine synthesizer.
  *
  *   engine (AudioWorklet, or ScriptProcessor fallback)

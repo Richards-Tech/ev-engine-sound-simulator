@@ -1,3 +1,8 @@
+/*
+ * description: Caches static app resources and serves cached copies offline.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
 var CACHE_NAME = 'evsound-v88';
 
 self.addEventListener('install', function (event) {

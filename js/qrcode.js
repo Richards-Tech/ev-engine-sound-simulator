@@ -1,3 +1,8 @@
+/*
+ * description: Bundled QR code generator used by subscription pairing.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
 //---------------------------------------------------------------------
 //
 // QR Code Generator for JavaScript

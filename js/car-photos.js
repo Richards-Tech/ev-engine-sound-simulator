@@ -1,3 +1,8 @@
+/*
+ * description: Maps car profile IDs to their image asset paths.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
 window.MOTORSOUND_CAR_PHOTO = {
   'gt3': 'img/gt3.png',
   'ferrari-v12': 'img/ferrari-v12.png',

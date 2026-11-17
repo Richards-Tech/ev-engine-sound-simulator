@@ -1,4 +1,9 @@
 /*
+ * description: Analytics consent banner and visitor preference handling.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * consent.js — analytics consent banner.
  * Vercel Analytics is only loaded after the visitor clicks "Yes". On "No" (or
  * before any choice) the analytics script is never requested.

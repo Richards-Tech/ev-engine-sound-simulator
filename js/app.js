@@ -1,4 +1,9 @@
 /*
+ * description: Main UI controller for the simulator, driving model and audio.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * app.js — wires the UI, speed source, drivetrain simulation and audio.
  */
 (function () {

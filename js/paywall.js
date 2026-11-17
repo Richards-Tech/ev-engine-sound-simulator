@@ -1,4 +1,9 @@
 /*
+ * description: Free-trial timer, subscription checkout and Pro entitlement.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * paywall.js — free daily trial, QR-code checkout and the Pro entitlement.
  *
  * Flow: the person picks monthly or yearly, the car asks /api/checkout for a

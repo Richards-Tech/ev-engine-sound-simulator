@@ -1,4 +1,9 @@
 /*
+ * description: Reads the service worker version for the page footer.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * version.js — shows the app version as the last line of the footer.
  * The version is the cache number in sw.js ('evsound-v88' → "Version 88"),
  * which goes up on every release, so there is only one number to bump.

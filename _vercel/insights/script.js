@@ -1,3 +1,8 @@
+/*
+ * description: Vercel Insights analytics script included by the project.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
 "use strict";
 ( () => {
     var t = (t, e) => () => (t && (e = t(t = 0)),

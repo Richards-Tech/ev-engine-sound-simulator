@@ -1,4 +1,9 @@
 /*
+ * description: Scroll-driven scenes and car gallery for the Explore page.
+ * createdDate: 2026-11-17
+ * maintainer: Truong Lai
+ */
+/*
  * story.js — the scroll-driven story page (explore.html, css/story.css).
  *
  * Scenes are tall sections with a sticky frame: how far the page has
